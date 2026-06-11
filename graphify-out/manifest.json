@@ -1,0 +1,14 @@
+{
+  "app/src/main/java/com/runningtrainer/android/ui/RunningTrainerApp.kt": 1779885083.3057892,
+  "app/src/main/java/com/runningtrainer/android/ui/screens/WorkoutDetailScreen.kt": 1779884996.1478822,
+  "app/src/main/java/com/runningtrainer/android/ui/screens/SettingsScreen.kt": 1779884939.8870163,
+  "app/src/main/java/com/runningtrainer/android/ui/screens/OnboardingScreens.kt": 1779885001.8954866,
+  "app/src/main/java/com/runningtrainer/android/ui/screens/HomeScreen.kt": 1779884891.1864624,
+  "app/src/main/java/com/runningtrainer/android/ui/screens/PaceCalculatorScreen.kt": 1779885025.9360447,
+  "app/src/main/java/com/runningtrainer/android/ui/screens/ProgressScreen.kt": 1779885571.723566,
+  "app/src/main/java/com/runningtrainer/android/ui/screens/StretchingScreen.kt": 1779885029.7296124,
+  "app/src/main/java/com/runningtrainer/android/ui/theme/Color.kt": 1779884825.2908955,
+  "app/src/main/java/com/runningtrainer/android/ui/theme/Theme.kt": 1779885579.3637893,
+  "app/src/main/java/com/runningtrainer/android/domain/model/TrainingModels.kt": 1779884834.4765394,
+  "app/src/main/java/com/runningtrainer/android/domain/service/ClaudeService.kt": 1779885267.3832092
+}

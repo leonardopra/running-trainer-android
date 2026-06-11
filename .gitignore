@@ -1,0 +1,14 @@
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+
+# Claude Code
+.claude/
+
+# Graphify ephemeral outputs
+graphify-out/cache/
+graphify-out/cost.json
+
+/app/release/app-release.aab

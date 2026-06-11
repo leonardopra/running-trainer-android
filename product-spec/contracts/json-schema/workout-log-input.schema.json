@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://running-trainer.local/contracts/workout-log-input.schema.json",
+  "title": "WorkoutLogInput",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["workoutId", "isCompleted", "completedAt"],
+  "properties": {
+    "workoutId": {
+      "type": "string"
+    },
+    "isCompleted": {
+      "type": "boolean"
+    },
+    "actualDistanceKm": {
+      "type": "number"
+    },
+    "actualDurationMinutes": {
+      "type": "integer"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "rpe": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "feeling": {
+      "type": "string",
+      "enum": ["great", "good", "ok", "tired", "injured"]
+    },
+    "completedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

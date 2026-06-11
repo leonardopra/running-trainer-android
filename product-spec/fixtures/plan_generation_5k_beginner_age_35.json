@@ -1,0 +1,31 @@
+{
+  "name": "5K beginner age 35",
+  "request": {
+    "goalType": "fiveK",
+    "fitnessLevel": "beginner",
+    "trainingDaysPerWeek": 3,
+    "age": 35,
+    "startDate": "2026-01-05T00:00:00.000Z"
+  },
+  "expected": {
+    "totalWeeks": 8,
+    "recoveryIntervalWeeks": 4,
+    "progressionRate": 1.09,
+    "taperApplied": true,
+    "weeklyTargetKm": [20.0, 21.8, 23.8, 19.0, 20.7, 16.6, 11.9, 7.1],
+    "weekThemes": [
+      "Foundation Week",
+      "Base Building",
+      "Base Building",
+      "Recovery Week",
+      "Strength Phase",
+      "Taper Begins",
+      "Race Prep",
+      "Race Week"
+    ],
+    "week1RunDays": [1, 3, 7],
+    "week1RunTypes": ["easyRun", "longRun", "easyRun"],
+    "week1RunTitles": ["5.3km Easy Run", "9.5km Long Run", "5.3km Easy Run"],
+    "taperWeeks": [6, 7, 8]
+  }
+}

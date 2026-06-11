@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://running-trainer.local/contracts/plan-generation-result.schema.json",
+  "title": "PlanGenerationResult",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["plan", "metadata"],
+  "properties": {
+    "plan": {
+      "type": "object",
+      "required": ["goalType", "fitnessLevel", "totalWeeks", "trainingDaysPerWeek", "weeks", "isClaudeEnriched"],
+      "properties": {
+        "goalType": {
+          "type": "string",
+          "enum": ["fiveK", "tenK", "halfMarathon", "marathon", "generalFitness"]
+        },
+        "fitnessLevel": {
+          "type": "string",
+          "enum": ["beginner", "intermediate", "advanced"]
+        },
+        "totalWeeks": {
+          "type": "integer"
+        },
+        "trainingDaysPerWeek": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 6
+        },
+        "weeks": {
+          "type": "array"
+        },
+        "isClaudeEnriched": {
+          "type": "boolean"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["recoveryIntervalWeeks", "progressionRate", "taperApplied"],
+      "properties": {
+        "recoveryIntervalWeeks": {
+          "type": "integer"
+        },
+        "progressionRate": {
+          "type": "number"
+        },
+        "taperApplied": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

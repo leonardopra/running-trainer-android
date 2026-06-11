@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Allenatore di Corsa</string>
+    <string name="loading">Caricamento\u2026</string>
+
+    <!-- Navigation / top bar -->
+    <string name="nav_home">Home</string>
+    <string name="nav_progress">Progressi</string>
+    <string name="nav_settings">Impostazioni</string>
+    <string name="nav_workout">Allenamento</string>
+    <string name="nav_run_history">Storico Corse</string>
+    <string name="nav_pace">Passo</string>
+    <string name="cd_back">Indietro</string>
+    <string name="cd_home">Home</string>
+
+    <!-- Buttons (shared) -->
+    <string name="btn_cancel">Annulla</string>
+    <string name="btn_reset">Reimposta</string>
+    <string name="btn_back">Indietro</string>
+    <string name="btn_save_settings">Salva impostazioni</string>
+    <string name="btn_show">Mostra</string>
+    <string name="btn_hide">Nascondi</string>
+    <string name="btn_view_all">Vedi tutto</string>
+
+    <!-- Home screen -->
+    <string name="home_no_plan">Nessun piano attivo</string>
+    <string name="home_no_plan_desc">Completa l\'onboarding per generare il tuo piano.</string>
+    <string name="home_restart_setup">Ricomincia configurazione</string>
+    <string name="home_welcome_back">Ben tornato</string>
+    <string name="home_greeting">Ciao, %1$s</string>
+    <string name="home_training_plan">Piano di Allenamento</string>
+    <string name="home_reset_local_data">Reimposta dati locali</string>
+    <string name="home_week_label">Settimana %1$d</string>
+    <string name="home_done_label">%1$d / %2$d completati</string>
+    <string name="home_km_target">%1$s km obiettivo</string>
+    <string name="home_day_label">Giorno %1$d</string>
+    <string name="home_done">Fatto</string>
+
+    <!-- Onboarding: goal -->
+    <string name="onboarding_goal_title">Qual è il tuo obiettivo?</string>
+    <string name="onboarding_goal_subtitle">Costruiremo il tuo piano di allenamento attorno a questo obiettivo.</string>
+    <string name="goal_five_k">5 km</string>
+    <string name="goal_ten_k">10 km</string>
+    <string name="goal_half_marathon">Mezza Maratona</string>
+    <string name="goal_marathon">Maratona</string>
+    <string name="goal_trail_run">Trail Run</string>
+    <string name="goal_general_fitness">Forma Fisica Generale</string>
+
+    <!-- Onboarding: race setup -->
+    <string name="onboarding_race_setup_title">Configurazione gara</string>
+    <string name="onboarding_race_setup_subtitle">Scegli una data obiettivo o una durata del piano.</string>
+    <string name="onboarding_race_date_label">Data gara (AAAA-MM-GG)</string>
+    <string name="onboarding_or_choose_duration">O scegli una durata</string>
+    <string name="onboarding_weeks_chip">%1$d sett.</string>
+
+    <!-- Onboarding: fitness -->
+    <string name="onboarding_fitness_title">Livello di forma</string>
+    <string name="onboarding_fitness_subtitle">Questo determina il tuo chilometraggio settimanale iniziale.</string>
+    <string name="fitness_beginner">Principiante</string>
+    <string name="fitness_intermediate">Intermedio</string>
+    <string name="fitness_advanced">Avanzato</string>
+    <string name="fitness_beginner_desc">Meno di 15 km/settimana o ritorno alla corsa.</string>
+    <string name="fitness_intermediate_desc">Base stabile tra 20–40 km/settimana.</string>
+    <string name="fitness_advanced_desc">Allenamento strutturato con alto chilometraggio settimanale.</string>
+
+    <!-- Onboarding: training days -->
+    <string name="onboarding_days_title">Giorni di allenamento</string>
+    <string name="onboarding_days_subtitle">Quante sessioni a settimana riesci a fare?</string>
+    <string name="onboarding_days_chip">%1$d giorni</string>
+
+    <!-- Onboarding: profile -->
+    <string name="onboarding_profile_title">Profilo corridore</string>
+    <string name="onboarding_profile_subtitle">I tuoi dati rimangono sul dispositivo e personalizzano il coaching.</string>
+    <string name="field_name">Nome</string>
+    <string name="field_age">Età</string>
+    <string name="field_weight_kg">Peso (kg)</string>
+    <string name="field_height_cm">Altezza (cm)</string>
+    <string name="btn_generate_plan">Genera Piano</string>
+    <string name="btn_generating">Generazione\u2026</string>
+
+    <!-- Generating screen -->
+    <string name="generating_title">Creando il tuo piano\u2026</string>
+    <string name="generating_subtitle">Generando un piano personalizzato in base al tuo profilo.</string>
+
+    <!-- Workout detail -->
+    <string name="workout_not_found">Allenamento non trovato</string>
+    <string name="target_pace_zone">Zona di Passo Obiettivo</string>
+    <string name="planned_distance">Pianificato %1$.1f km</string>
+    <string name="planned_duration">~%1$d min</string>
+    <string name="planned_distance_duration">Pianificato %1$.1f km  ·  ~%2$d min</string>
+    <string name="workout_note_high_distance">Nota: la distanza registrata è molto superiore a quella pianificata (%1$.1f km).</string>
+    <string name="field_actual_distance">Distanza effettiva (km)</string>
+    <string name="field_actual_duration">Durata effettiva (min)</string>
+    <string name="field_notes">Note</string>
+    <string name="perceived_effort">Sforzo percepito</string>
+    <string name="rpe_not_set">Non impostato</string>
+    <string name="rpe_value">%1$d / 10</string>
+    <string name="how_did_you_feel">Come ti sei sentito?</string>
+    <string name="btn_update_log">Aggiorna registro</string>
+    <string name="btn_mark_done">Segna completato</string>
+    <string name="btn_clear_log">Cancella registro</string>
+    <string name="feeling_great">🙌 Ottimo</string>
+    <string name="feeling_good">😊 Bene</string>
+    <string name="feeling_ok">😐 Ok</string>
+    <string name="feeling_tired">😓 Stanco</string>
+    <string name="feeling_injured">🤕 Infortunato</string>
+
+    <!-- Workout types (for display) -->
+    <string name="workout_type_easy_run">Corsa Facile</string>
+    <string name="workout_type_long_run">Corsa Lunga</string>
+    <string name="workout_type_tempo_run">Corsa Tempo</string>
+    <string name="workout_type_interval_run">Corsa a Intervalli</string>
+    <string name="workout_type_cross_train">Cross Training</string>
+    <string name="workout_type_rest">Riposo</string>
+
+    <!-- Progress screen -->
+    <string name="progress_weekly_km_chart">Km per settimana</string>
+    <string name="progress_weekly_km_delta">%1$+.0f%% vs sett. prec.</string>
+    <string name="no_data_yet">Nessun dato ancora</string>
+    <string name="progress_no_plan_desc">Completa alcuni allenamenti per vedere i tuoi progressi.</string>
+    <string name="progress_completion">Completamento</string>
+    <string name="progress_distance">Distanza</string>
+    <string name="progress_streak">Serie</string>
+    <string name="progress_weeks_done">Settimane Fatte</string>
+    <string name="progress_of_planned">di %1$s pianificati</string>
+    <string name="progress_consecutive">allenamenti consecutivi</string>
+    <string name="progress_of_started">di %1$d iniziate</string>
+    <string name="how_youve_felt">Come Ti Sei Sentito</string>
+    <string name="workout_types">Tipi di Allenamento</string>
+    <string name="weekly_progress">Progresso Settimanale</string>
+    <string name="recent_activity">Attività Recente</string>
+    <string name="rpe_label">RPE %1$d</string>
+    <string name="today">Oggi</string>
+    <string name="yesterday">Ieri</string>
+    <string name="days_ago">%1$d giorni fa</string>
+    <string name="km_logged">%1$s km</string>
+    <string name="week_progress_km">%1$.1f / %2$.1f km</string>
+
+    <!-- Run History -->
+    <string name="run_history">Storico Corse</string>
+
+    <!-- Settings screen -->
+    <string name="settings_title">Impostazioni</string>
+    <string name="section_profile">Profilo</string>
+    <string name="section_ai_coaching">Coaching AI</string>
+    <string name="ai_coaching_desc">Chiave API Claude opzionale per consigli personalizzati.</string>
+    <string name="field_claude_api_key">Chiave API Claude</string>
+    <string name="section_units">Unità</string>
+    <string name="use_kilometers">Usa chilometri</string>
+    <string name="section_notifications">Notifiche</string>
+    <string name="workout_reminders">Promemoria allenamento</string>
+    <string name="field_hour">Ora (0–23)</string>
+    <string name="field_minute">Minuto (0–59)</string>
+    <string name="section_training_plan">Piano di Allenamento</string>
+    <string name="training_plan_desc">Genera un nuovo piano basato su obiettivi o livello di forma aggiornati.</string>
+    <string name="btn_start_new_plan">Inizia nuovo piano</string>
+    <string name="section_data">Dati</string>
+    <string name="btn_reset_all_data">Reimposta tutti i dati</string>
+    <string name="dialog_new_plan_title">Iniziare un nuovo piano?</string>
+    <string name="dialog_new_plan_body">Questo sostituirà il tuo piano di allenamento attuale. La cronologia degli allenamenti andrà persa.</string>
+    <string name="dialog_reset_title">Reimposta tutti i dati?</string>
+    <string name="dialog_reset_body">Tutti i piani, gli allenamenti e le impostazioni saranno eliminati definitivamente.</string>
+    <string name="section_language">Lingua</string>
+    <string name="lang_english">English</string>
+    <string name="lang_italian">Italiano</string>
+    <string name="lang_german">Deutsch</string>
+
+    <!-- Pace calculator screen -->
+    <string name="pace_title">Zone di Passo</string>
+    <string name="pace_race_distance">Distanza Gara</string>
+    <string name="pace_goal_time">Tempo Obiettivo</string>
+    <string name="pace_goal_time_desc">Tempo d\'arrivo previsto per %1$s</string>
+    <string name="pace_hours">h</string>
+    <string name="pace_minutes">min</string>
+    <string name="pace_seconds">sec</string>
+    <string name="pace_zone_easy_desc">Ritmo conversazionale. Deve sembrare facile — potresti tenere una conversazione completa. Costruisce la base aerobica.</string>
+    <string name="pace_zone_long_desc">Leggermente più lento dell\'easy. Usato per il lungo del weekend per costruire resistenza.</string>
+    <string name="pace_zone_tempo_desc">Moderatamente duro. Riesci a parlare in frasi brevi. Aumenta la soglia del lattato.</string>
+    <string name="pace_zone_interval_desc">Sforzo duro. Brevi raffiche ad alta intensità a ritmo gara o più veloci. Costruisce il VO\u2082max.</string>
+    <string name="pace_no_time">Inserisci il tuo tempo obiettivo per vedere le zone di passo.</string>
+    <string name="pace_training_zones">Zone di Allenamento</string>
+    <string name="pace_training_zones_sub">Basato su obiettivo %1$s · %2$s</string>
+
+    <!-- Stretching screen -->
+    <string name="stretch_pre_run_title">Riscaldamento Pre-Corsa</string>
+    <string name="stretch_post_run_title">Defaticamento Post-Corsa</string>
+    <string name="stretch_dynamic_heading">Riscaldamento dinamico</string>
+    <string name="stretch_static_heading">Defaticamento statico</string>
+    <string name="stretch_pre_run_banner">Prepara muscoli e articolazioni prima di correre.</string>
+    <string name="stretch_post_run_banner">Aiuta il corpo a recuperare e riduci i dolori muscolari.</string>
+    <string name="stretch_tip">Tocca un esercizio per espandere le istruzioni.</string>
+    <string name="stretch_watch_tutorial">Guarda tutorial</string>
+    <string name="workout_coach_note">Nota Allenatore</string>
+    <string name="workout_coaching_tip">Consiglio Allenatore</string>
+    <string name="workout_post_coaching">Coaching Post-Allenamento</string>
+    <string name="coaching_auth_error">Chiave API Claude non valida. Controlla la chiave nelle Impostazioni.</string>
+    <string name="btn_continue">Continua</string>
+    <string name="btn_pre_run_stretch">Pre-corsa</string>
+    <string name="btn_post_run_stretch">Post-corsa</string>
+
+    <!-- Privacy screen -->
+    <string name="privacy_title">Informativa sulla Privacy</string>
+    <string name="privacy_last_updated">Ultimo aggiornamento: aprile 2026</string>
+    <string name="privacy_policy">Informativa sulla Privacy</string>
+
+    <!-- Settings: about -->
+    <string name="section_about">Informazioni</string>
+</resources>

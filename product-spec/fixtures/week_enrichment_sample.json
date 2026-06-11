@@ -1,0 +1,51 @@
+{
+  "request": {
+    "apiModel": "claude-sonnet-4-6",
+    "goalType": "Half Marathon",
+    "fitnessLevel": "Intermediate",
+    "age": 41,
+    "weightKg": 72,
+    "heightCm": 178,
+    "week": {
+      "weekNumber": 3,
+      "weekTheme": "Base Building",
+      "targetWeeklyKm": 38.2,
+      "isTaperWeek": false,
+      "workouts": [
+        {
+          "id": "wk3-easy-1",
+          "type": "easyRun",
+          "dayOfWeek": 1,
+          "distanceKm": 7.5,
+          "effortLevel": "easy",
+          "title": "7.5km Easy Run",
+          "isCompleted": false
+        },
+        {
+          "id": "wk3-tempo-1",
+          "type": "tempoRun",
+          "dayOfWeek": 4,
+          "distanceKm": 6.0,
+          "effortLevel": "hard",
+          "title": "6.0km Tempo Run",
+          "isCompleted": false
+        }
+      ]
+    }
+  },
+  "expected": {
+    "source": "remote",
+    "workouts": [
+      {
+        "id": "wk3-easy-1",
+        "description": "Relaxed aerobic run with conversational effort and smooth cadence throughout.",
+        "coachingTip": "Keep the effort controlled and finish feeling fresher than you started."
+      },
+      {
+        "id": "wk3-tempo-1",
+        "description": "Steady threshold session designed to raise comfort at sustained faster pace.",
+        "coachingTip": "Start just under tempo effort, then settle into a strong but repeatable rhythm."
+      }
+    ]
+  }
+}

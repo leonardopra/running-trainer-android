@@ -1,0 +1,39 @@
+{
+  "name": "Marathon advanced age 52",
+  "request": {
+    "goalType": "marathon",
+    "fitnessLevel": "advanced",
+    "trainingDaysPerWeek": 5,
+    "age": 52,
+    "startDate": "2026-01-05T00:00:00.000Z"
+  },
+  "expected": {
+    "totalWeeks": 16,
+    "recoveryIntervalWeeks": 3,
+    "progressionRate": 1.07,
+    "taperApplied": true,
+    "weeklyTargetKm": [55.0, 58.9, 47.1, 50.4, 53.9, 43.1, 46.1, 49.3, 39.5, 42.3, 45.3, 36.2, 38.7, 41.2, 29.4, 17.7],
+    "weekThemes": [
+      "Foundation Week",
+      "Base Building",
+      "Recovery Week (50+ protocol)",
+      "Base Building",
+      "Base Building",
+      "Recovery Week (50+ protocol)",
+      "Strength Phase",
+      "Strength Phase",
+      "Recovery Week (50+ protocol)",
+      "Strength Phase",
+      "Strength Phase",
+      "Recovery Week (50+ protocol)",
+      "Peak Training",
+      "Taper Begins",
+      "Race Prep",
+      "Race Week"
+    ],
+    "week1RunDays": [1, 2, 4, 5, 7],
+    "week1RunTypes": ["easyRun", "easyRun", "tempoRun", "easyRun", "longRun"],
+    "week1RunTitles": ["9.8km Easy Run", "9.8km Easy Run", "7.9km Tempo Run", "9.8km Easy Run", "17.7km Long Run"],
+    "taperWeeks": [14, 15, 16]
+  }
+}

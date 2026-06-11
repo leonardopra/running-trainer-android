@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://running-trainer.local/contracts/plan-generation-request.schema.json",
+  "title": "PlanGenerationRequest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["goalType", "fitnessLevel", "trainingDaysPerWeek"],
+  "properties": {
+    "goalType": {
+      "type": "string",
+      "enum": ["fiveK", "tenK", "halfMarathon", "marathon", "generalFitness"]
+    },
+    "fitnessLevel": {
+      "type": "string",
+      "enum": ["beginner", "intermediate", "advanced"]
+    },
+    "trainingDaysPerWeek": {
+      "type": "integer",
+      "minimum": 3,
+      "maximum": 6
+    },
+    "raceDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

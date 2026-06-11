@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android ≤ 11 (auto backup). The DataStore directory holds user preferences
+     including the Claude API key; the encrypted value is bound to this device's
+     Keystore and a legacy plaintext value may still exist, so exclude it all. -->
+<full-backup-content>
+    <exclude domain="file" path="datastore/" />
+</full-backup-content>

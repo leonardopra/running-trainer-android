@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://running-trainer.local/contracts/coaching-insight.schema.json",
+  "title": "CoachingInsightDTO",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["title", "body", "type", "priority"],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["positive", "warning", "info", "motivation"]
+    },
+    "priority": {
+      "type": "integer"
+    }
+  }
+}

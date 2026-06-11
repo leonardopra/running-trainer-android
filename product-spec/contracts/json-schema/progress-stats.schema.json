@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://running-trainer.local/contracts/progress-stats.schema.json",
+  "title": "ProgressStatsDTO",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "totalNonRestWorkouts",
+    "completedWorkouts",
+    "totalPlannedKm",
+    "totalLoggedKm",
+    "currentStreak"
+  ],
+  "properties": {
+    "totalNonRestWorkouts": {
+      "type": "integer"
+    },
+    "completedWorkouts": {
+      "type": "integer"
+    },
+    "totalPlannedKm": {
+      "type": "number"
+    },
+    "totalLoggedKm": {
+      "type": "number"
+    },
+    "currentStreak": {
+      "type": "integer"
+    }
+  }
+}

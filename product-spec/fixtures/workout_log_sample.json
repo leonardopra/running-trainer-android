@@ -1,0 +1,23 @@
+{
+  "input": {
+    "workoutId": "wk3-easy-1",
+    "isCompleted": true,
+    "actualDistanceKm": 7.2,
+    "actualDurationMinutes": 43,
+    "notes": "Felt smooth after the first 10 minutes.",
+    "rpe": 4,
+    "feeling": "good",
+    "completedAt": "2026-01-19T07:15:00.000Z"
+  },
+  "expected": {
+    "derivedLoggedKm": 7.2,
+    "workout": {
+      "id": "wk3-easy-1",
+      "isCompleted": true,
+      "actualDistanceKm": 7.2,
+      "actualDurationMinutes": 43,
+      "rpe": 4,
+      "feeling": "good"
+    }
+  }
+}

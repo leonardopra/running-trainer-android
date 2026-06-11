@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://running-trainer.local/contracts/week-enrichment-result.schema.json",
+  "title": "WeekEnrichmentResult",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["workouts", "source"],
+  "properties": {
+    "workouts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "coachingTip": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source": {
+      "type": "string",
+      "enum": ["remote", "fallback"]
+    }
+  }
+}

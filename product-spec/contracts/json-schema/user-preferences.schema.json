@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://running-trainer.local/contracts/user-preferences.schema.json",
+  "title": "UserPreferencesDTO",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "useKilometers",
+    "hasCompletedOnboarding",
+    "notificationsEnabled",
+    "notificationHour",
+    "notificationMinute",
+    "localeCode"
+  ],
+  "properties": {
+    "claudeApiKey": {
+      "type": "string"
+    },
+    "useKilometers": {
+      "type": "boolean"
+    },
+    "hasCompletedOnboarding": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "weightKg": {
+      "type": "number"
+    },
+    "heightCm": {
+      "type": "number"
+    },
+    "notificationsEnabled": {
+      "type": "boolean"
+    },
+    "notificationHour": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 23
+    },
+    "notificationMinute": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 59
+    },
+    "goalTimeSeconds": {
+      "type": "integer"
+    },
+    "localeCode": {
+      "type": "string"
+    }
+  }
+}

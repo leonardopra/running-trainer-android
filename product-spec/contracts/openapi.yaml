@@ -1,0 +1,358 @@
+openapi: 3.1.0
+info:
+  title: Running Trainer Shared Contracts
+  version: 1.0.0
+  description: |
+    Shared API and DTO contracts for the native-platform migration.
+    Offline-first remains mandatory. Remote APIs are optional support services.
+servers:
+  - url: https://api.example.com
+paths:
+  /v1/ai/enrich-week:
+    post:
+      summary: Enrich a locally generated training week with coaching copy
+      operationId: enrichWeek
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WeekEnrichmentRequest'
+      responses:
+        '200':
+          description: Week enrichment generated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WeekEnrichmentResult'
+        '401':
+          description: Invalid or missing API key
+        '429':
+          description: Rate limited, client may retry with backoff
+        '5XX':
+          description: Remote failure, client must keep local plan usable
+components:
+  schemas:
+    GoalType:
+      type: string
+      enum: [fiveK, tenK, halfMarathon, marathon, generalFitness]
+    FitnessLevel:
+      type: string
+      enum: [beginner, intermediate, advanced]
+    WorkoutType:
+      type: string
+      enum: [easyRun, tempoRun, intervalRun, longRun, rest, crossTrain]
+    EffortLevel:
+      type: string
+      enum: [veryEasy, easy, moderate, hard, veryHard]
+    WorkoutFeeling:
+      type: string
+      enum: [great, good, ok, tired, injured]
+    Workout:
+      type: object
+      required:
+        - id
+        - type
+        - dayOfWeek
+        - effortLevel
+        - title
+        - isCompleted
+      properties:
+        id:
+          type: string
+        type:
+          $ref: '#/components/schemas/WorkoutType'
+        dayOfWeek:
+          type: integer
+          minimum: 1
+          maximum: 7
+        distanceKm:
+          type: number
+        durationMinutes:
+          type: integer
+        effortLevel:
+          $ref: '#/components/schemas/EffortLevel'
+        title:
+          type: string
+        description:
+          type: string
+        coachingTip:
+          type: string
+        isCompleted:
+          type: boolean
+        actualDistanceKm:
+          type: number
+        actualDurationMinutes:
+          type: integer
+        completedAt:
+          type: string
+          format: date-time
+        notes:
+          type: string
+        rpe:
+          type: integer
+          minimum: 1
+          maximum: 10
+        feeling:
+          $ref: '#/components/schemas/WorkoutFeeling'
+        postWorkoutCoaching:
+          type: string
+    TrainingWeek:
+      type: object
+      required:
+        - weekNumber
+        - weekTheme
+        - targetWeeklyKm
+        - isTaperWeek
+        - workouts
+      properties:
+        weekNumber:
+          type: integer
+        weekTheme:
+          type: string
+        targetWeeklyKm:
+          type: number
+        isTaperWeek:
+          type: boolean
+        workouts:
+          type: array
+          items:
+            $ref: '#/components/schemas/Workout'
+    TrainingPlan:
+      type: object
+      required:
+        - id
+        - goalType
+        - fitnessLevel
+        - startDate
+        - totalWeeks
+        - trainingDaysPerWeek
+        - weeks
+        - createdAt
+        - isClaudeEnriched
+      properties:
+        id:
+          type: string
+        goalType:
+          $ref: '#/components/schemas/GoalType'
+        fitnessLevel:
+          $ref: '#/components/schemas/FitnessLevel'
+        startDate:
+          type: string
+          format: date-time
+        raceDate:
+          type: string
+          format: date-time
+        totalWeeks:
+          type: integer
+        trainingDaysPerWeek:
+          type: integer
+          minimum: 3
+          maximum: 6
+        weeks:
+          type: array
+          items:
+            $ref: '#/components/schemas/TrainingWeek'
+        createdAt:
+          type: string
+          format: date-time
+        isClaudeEnriched:
+          type: boolean
+    PlanGenerationRequest:
+      type: object
+      required:
+        - goalType
+        - fitnessLevel
+        - trainingDaysPerWeek
+      properties:
+        goalType:
+          $ref: '#/components/schemas/GoalType'
+        fitnessLevel:
+          $ref: '#/components/schemas/FitnessLevel'
+        trainingDaysPerWeek:
+          type: integer
+          minimum: 3
+          maximum: 6
+        raceDate:
+          type: string
+          format: date-time
+        startDate:
+          type: string
+          format: date-time
+        age:
+          type: integer
+          minimum: 1
+    PlanGenerationResult:
+      type: object
+      required:
+        - plan
+        - metadata
+      properties:
+        plan:
+          $ref: '#/components/schemas/TrainingPlan'
+        metadata:
+          type: object
+          required:
+            - recoveryIntervalWeeks
+            - progressionRate
+            - taperApplied
+          properties:
+            recoveryIntervalWeeks:
+              type: integer
+            progressionRate:
+              type: number
+            taperApplied:
+              type: boolean
+    WeekEnrichmentRequest:
+      type: object
+      required:
+        - week
+        - apiModel
+        - goalType
+        - fitnessLevel
+      properties:
+        week:
+          $ref: '#/components/schemas/TrainingWeek'
+        apiModel:
+          type: string
+        goalType:
+          type: string
+        fitnessLevel:
+          type: string
+        age:
+          type: integer
+        weightKg:
+          type: number
+        heightCm:
+          type: number
+    WeekEnrichmentResult:
+      type: object
+      required:
+        - workouts
+        - source
+      properties:
+        workouts:
+          type: array
+          items:
+            type: object
+            required: [id]
+            properties:
+              id:
+                type: string
+              description:
+                type: string
+              coachingTip:
+                type: string
+        source:
+          type: string
+          enum: [remote, fallback]
+    WorkoutLogInput:
+      type: object
+      required:
+        - workoutId
+        - completedAt
+        - isCompleted
+      properties:
+        workoutId:
+          type: string
+        isCompleted:
+          type: boolean
+        actualDistanceKm:
+          type: number
+        actualDurationMinutes:
+          type: integer
+        notes:
+          type: string
+        rpe:
+          type: integer
+          minimum: 1
+          maximum: 10
+        feeling:
+          $ref: '#/components/schemas/WorkoutFeeling'
+        completedAt:
+          type: string
+          format: date-time
+    WorkoutLogResult:
+      type: object
+      required:
+        - workout
+        - derivedLoggedKm
+      properties:
+        workout:
+          $ref: '#/components/schemas/Workout'
+        derivedLoggedKm:
+          type: number
+    UserPreferencesDTO:
+      type: object
+      required:
+        - useKilometers
+        - hasCompletedOnboarding
+        - notificationsEnabled
+        - notificationHour
+        - notificationMinute
+        - localeCode
+      properties:
+        claudeApiKey:
+          type: string
+        useKilometers:
+          type: boolean
+        hasCompletedOnboarding:
+          type: boolean
+        name:
+          type: string
+        age:
+          type: integer
+        weightKg:
+          type: number
+        heightCm:
+          type: number
+        notificationsEnabled:
+          type: boolean
+        notificationHour:
+          type: integer
+          minimum: 0
+          maximum: 23
+        notificationMinute:
+          type: integer
+          minimum: 0
+          maximum: 59
+        goalTimeSeconds:
+          type: integer
+        localeCode:
+          type: string
+    ProgressStatsDTO:
+      type: object
+      required:
+        - totalNonRestWorkouts
+        - completedWorkouts
+        - totalPlannedKm
+        - totalLoggedKm
+        - currentStreak
+      properties:
+        totalNonRestWorkouts:
+          type: integer
+        completedWorkouts:
+          type: integer
+        totalPlannedKm:
+          type: number
+        totalLoggedKm:
+          type: number
+        currentStreak:
+          type: integer
+    CoachingInsightDTO:
+      type: object
+      required:
+        - title
+        - body
+        - type
+        - priority
+      properties:
+        title:
+          type: string
+        body:
+          type: string
+        type:
+          type: string
+          enum: [positive, warning, info, motivation]
+        priority:
+          type: integer
