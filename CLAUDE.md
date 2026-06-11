@@ -32,7 +32,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Sub-ViewModels publish navigation intents on a `navigationEvent: Channel<AppDestination>`; `MainActivity` collects them (inside `repeatOnLifecycle`) and forwards to `MainViewModel.navigateTo`, and likewise mirrors `OnboardingViewModel.uiState` into `MainViewModel`.
 
-**Navigation** is ViewModel-driven via `currentDestination: MutableStateFlow<AppDestination>` — there is no Jetpack Navigation back stack. `RunningTrainerApp.kt` renders the matching screen with a `when(dest)` inside a `Scaffold` with a 4-tab bottom nav (Home / Progress / PaceCalc / Settings). System back is handled by a `BackHandler` in `RunningTrainerApp.kt` that maps each destination to its logical parent (tabs → Home, onboarding steps in reverse); Home/Goal/Generating exit the app. `navigation-compose` is on the classpath but is **not** used.
+**Navigation** is ViewModel-driven via `currentDestination: MutableStateFlow<AppDestination>` — there is no Jetpack Navigation back stack. `RunningTrainerApp.kt` renders the matching screen with a `when(dest)` inside a `Scaffold` with a 4-tab bottom nav (Home / Progress / PaceCalc / Settings). System back is handled by a `BackHandler` in `RunningTrainerApp.kt` that maps each destination to its logical parent (tabs → Home, onboarding steps in reverse); Home/Goal/Generating exit the app. Jetpack Navigation is intentionally not a dependency (RUN-46).
 
 **`MainActivity` extends `AppCompatActivity`** (not `ComponentActivity`) — required so `AppCompatDelegate.setApplicationLocales()` applies the stored locale (`en`/`it`/`de`, see `res/xml/locales_config.xml`) correctly, including on Android < 13. The stored locale is applied in `onCreate`.
 
