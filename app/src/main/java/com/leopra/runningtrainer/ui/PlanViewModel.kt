@@ -23,8 +23,11 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.drop
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.firstOrNull
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import java.time.LocalDate
@@ -110,6 +113,22 @@ class PlanViewModel @Inject constructor(
                 }
             }
         }
+
+        // When the saved language changes, re-enrich so Claude descriptions/tips
+        // already stored in the plan switch to the new language too.
+        viewModelScope.launch {
+            settingsRepository.observePreferences()
+                .map { it.localeCode }
+                .distinctUntilChanged()
+                .drop(1) // skip the value loaded at startup
+                .collect {
+                    val prefs = settingsRepository.observePreferences().first()
+                    val apiKey = prefs.claudeApiKey
+                    if (!apiKey.isNullOrBlank() && !isEnriching.value) {
+                        runEnrichment(apiKey, prefs, force = true)
+                    }
+                }
+        }
     }
 
     fun openWorkoutDetail(workoutId: String) {
@@ -125,9 +144,9 @@ class PlanViewModel @Inject constructor(
         viewModelScope.launch { _navigationEvent.emit(AppDestination.RunHistory) }
     }
 
-    private suspend fun runEnrichment(apiKey: String, prefs: UserPreferencesDto) {
+    private suspend fun runEnrichment(apiKey: String, prefs: UserPreferencesDto, force: Boolean = false) {
         val plan = trainingPlanRepository.observeActivePlan().firstOrNull() ?: return
-        if (plan.isClaudeEnriched) return
+        if (plan.isClaudeEnriched && !force) return
         isEnriching.value = true
         enrichmentError.value = null
         try {
