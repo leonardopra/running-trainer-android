@@ -116,7 +116,7 @@ fun WorkoutDetailScreen(
                     .background(typeColor)
             )
             Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                Text(workout.title, style = MaterialTheme.typography.headlineMedium)
+                Text(workout.displayTitle(), style = MaterialTheme.typography.headlineMedium)
                 Text(
                     stringResource(R.string.home_day_label, workout.dayOfWeek) + " · " + workout.type.typeLabel(),
                     style = MaterialTheme.typography.bodyMedium,
@@ -126,12 +126,12 @@ fun WorkoutDetailScreen(
         }
 
         // Planned reference
-        val plannedRef = buildString {
-            workout.distanceKm?.let { append("Planned ${"%.1f".format(it)} km") }
-            workout.durationMinutes?.let {
-                if (isNotEmpty()) append("  ·  ")
-                append("~$it min")
-            }
+        val plannedRef = when {
+            workout.distanceKm != null && workout.durationMinutes != null ->
+                stringResource(R.string.planned_distance_duration, workout.distanceKm, workout.durationMinutes)
+            workout.distanceKm != null -> stringResource(R.string.planned_distance, workout.distanceKm)
+            workout.durationMinutes != null -> stringResource(R.string.planned_duration, workout.durationMinutes)
+            else -> ""
         }
         if (plannedRef.isNotEmpty()) {
             Text(plannedRef, style = MaterialTheme.typography.bodyMedium, color = TextMuted)

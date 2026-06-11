@@ -300,7 +300,7 @@ fun ProgressScreen(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Column(modifier = Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                            Text(workout.title, style = MaterialTheme.typography.bodyLarge)
+                            Text(workout.displayTitle(), style = MaterialTheme.typography.bodyLarge)
                             val detail = buildString {
                                 workout.actualDistanceKm?.let { append("${"%.1f".format(it)} km") }
                                 workout.actualDurationMinutes?.let {

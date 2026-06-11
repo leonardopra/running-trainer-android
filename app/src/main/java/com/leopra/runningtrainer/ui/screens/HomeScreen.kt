@@ -39,13 +39,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.leopra.runningtrainer.R
 import com.leopra.runningtrainer.domain.model.CoachingInsight
 import com.leopra.runningtrainer.domain.model.GoalType
+import com.leopra.runningtrainer.domain.model.InsightKind
 import com.leopra.runningtrainer.domain.model.InsightType
+import com.leopra.runningtrainer.domain.model.Workout
 import com.leopra.runningtrainer.domain.model.TrainingPlan
 import com.leopra.runningtrainer.domain.model.WorkoutType
 import com.leopra.runningtrainer.ui.theme.ColorCrossTrain
@@ -93,8 +96,8 @@ fun HomeScreen(
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    PlanChip("${activePlan.totalWeeks} weeks")
-                    PlanChip("${activePlan.trainingDaysPerWeek} days/week")
+                    PlanChip(stringResource(R.string.home_chip_weeks, activePlan.totalWeeks))
+                    PlanChip(stringResource(R.string.home_chip_days_per_week, activePlan.trainingDaysPerWeek))
                     PlanChip(activePlan.goalType.label())
                 }
             }
@@ -146,7 +149,7 @@ fun HomeScreen(
                     }
                     if (week.weekTheme.isNotBlank()) {
                         Text(
-                            week.weekTheme,
+                            weekThemeLabel(week.weekTheme),
                             style = MaterialTheme.typography.bodyMedium,
                             color = TextMuted
                         )
@@ -160,7 +163,7 @@ fun HomeScreen(
                     Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
                         week.workouts.forEach { workout ->
                             WorkoutTile(
-                                title = workout.title,
+                                title = workout.displayTitle(),
                                 subtitle = stringResource(R.string.home_day_label, workout.dayOfWeek),
                                 type = workout.type,
                                 isCompleted = workout.isCompleted,
@@ -346,6 +349,60 @@ fun GoalType.label(): String = when (this) {
     GoalType.generalFitness -> stringResource(R.string.goal_general_fitness)
 }
 
+// The plan payload stores English titles/themes (fixture parity); display text is derived here.
+@Composable
+fun Workout.displayTitle(): String {
+    val km = distanceKm?.let { "%.1f".format(java.util.Locale.US, it) }
+    return when {
+        type == WorkoutType.rest        -> stringResource(R.string.workout_title_rest)
+        type == WorkoutType.crossTrain  -> stringResource(R.string.workout_title_cross)
+        km == null                      -> type.typeLabel()
+        type == WorkoutType.easyRun     -> stringResource(R.string.workout_title_easy, km)
+        type == WorkoutType.tempoRun    -> stringResource(R.string.workout_title_tempo, km)
+        type == WorkoutType.intervalRun -> stringResource(R.string.workout_title_interval, km)
+        type == WorkoutType.longRun     -> stringResource(R.string.workout_title_long, km)
+        else                            -> title
+    }
+}
+
+@Composable
+fun weekThemeLabel(theme: String): String = when (theme) {
+    "Foundation Week"              -> stringResource(R.string.week_theme_foundation)
+    "Taper Begins"                 -> stringResource(R.string.week_theme_taper_begins)
+    "Race Prep"                    -> stringResource(R.string.week_theme_race_prep)
+    "Race Week"                    -> stringResource(R.string.week_theme_race_week)
+    "Recovery Week"                -> stringResource(R.string.week_theme_recovery)
+    "Recovery Week (50+ protocol)" -> stringResource(R.string.week_theme_recovery_50)
+    "Base Building"                -> stringResource(R.string.week_theme_base)
+    "Strength Phase"               -> stringResource(R.string.week_theme_strength)
+    "Peak Training"                -> stringResource(R.string.week_theme_peak)
+    else                           -> theme
+}
+
+@Composable
+fun CoachingInsight.titleText(): String = when (kind) {
+    InsightKind.TAPER_WEEK           -> stringResource(R.string.insight_taper_week)
+    InsightKind.RECOVERY_WEEK        -> stringResource(R.string.insight_recovery_week)
+    InsightKind.WEEK_1_WELCOME       -> stringResource(R.string.insight_week_1_welcome)
+    InsightKind.HIGH_CONSISTENCY     -> stringResource(R.string.insight_high_consistency)
+    InsightKind.LOW_CONSISTENCY      -> stringResource(R.string.insight_low_consistency)
+    InsightKind.BACK_ON_TRACK        -> stringResource(R.string.insight_back_on_track)
+    InsightKind.ON_TRACK_WEEK        -> stringResource(R.string.insight_on_track_week)
+    InsightKind.BEHIND_WEEK          -> stringResource(R.string.insight_behind_week)
+    InsightKind.EASY_RUNS_TOO_FAST   -> stringResource(R.string.insight_easy_too_fast)
+    InsightKind.HIGH_RPE_EASY        -> stringResource(R.string.insight_high_rpe_easy)
+    InsightKind.FATIGUE_SIGNS        -> stringResource(R.string.insight_fatigue_signs)
+    InsightKind.MISSED_LONG_RUN      -> stringResource(R.string.insight_missed_long_run)
+    InsightKind.STREAK               -> stringResource(R.string.insight_streak, count ?: 0)
+    InsightKind.KEY_SESSION_TOMORROW -> stringResource(R.string.insight_key_tomorrow)
+    InsightKind.RACE_DAY             -> stringResource(R.string.insight_race_day)
+    InsightKind.DAYS_TO_RACE         -> pluralStringResource(R.plurals.insight_days_to_race, count ?: 0, count ?: 0)
+    InsightKind.WEEKS_LEFT_SOON      -> pluralStringResource(R.plurals.insight_weeks_left_soon, count ?: 0, count ?: 0)
+    InsightKind.WEEKS_TO_RACE        -> stringResource(
+        R.string.insight_weeks_to_race, count ?: 0, goalType?.label() ?: ""
+    )
+}
+
 @Composable
 fun workoutTypeColor(type: WorkoutType): Color = when (type) {
     WorkoutType.easyRun     -> ColorEasyRun
@@ -436,7 +493,7 @@ private fun InsightChip(insight: CoachingInsight) {
             .padding(horizontal = 12.dp, vertical = 6.dp)
     ) {
         Text(
-            insight.title,
+            insight.titleText(),
             style = MaterialTheme.typography.labelMedium,
             color = fg
         )

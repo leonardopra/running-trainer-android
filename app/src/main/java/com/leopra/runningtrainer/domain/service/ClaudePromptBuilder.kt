@@ -46,14 +46,16 @@ object ClaudePromptBuilder {
             "Workouts to enrich:\n$workoutsJson\n\n" +
             "Return ONLY a JSON array with this structure for each workout:\n" +
             "[{\"id\": \"...\", \"description\": \"...\", \"coachingTip\": \"...\"}]\n\n" +
-            "Rules: max 60 words per description, direct/practical tone, no markdown."
+            "Rules: max 60 words per description, direct/practical tone, no markdown. " +
+            "Write description and coachingTip in ${languageName(preferences.localeCode)}."
 
         return ClaudeRequest(prompt = prompt)
     }
 
     fun buildPostWorkoutPrompt(
         workout: Workout,
-        age: Int?
+        age: Int?,
+        localeCode: String = "en"
     ): ClaudeRequest {
         val distStr = workout.actualDistanceKm?.let { String.format(java.util.Locale.US, "%.2f km", it) } ?: "unknown distance"
         val durStr = workout.actualDurationMinutes?.let { "$it min" } ?: "unknown duration"
@@ -70,8 +72,15 @@ object ClaudePromptBuilder {
 
         return ClaudeRequest(
             prompt = prompt,
-            systemPrompt = "You are an experienced running coach. Give concise, honest, actionable post-workout feedback. Plain text only, no markdown, max 80 words.",
+            systemPrompt = "You are an experienced running coach. Give concise, honest, actionable post-workout feedback. " +
+                "Plain text only, no markdown, max 80 words. Respond in ${languageName(localeCode)}.",
             maxTokens = 256
         )
+    }
+
+    private fun languageName(localeCode: String): String = when (localeCode) {
+        "it" -> "Italian"
+        "de" -> "German"
+        else -> "English"
     }
 }

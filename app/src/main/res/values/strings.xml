@@ -206,4 +206,51 @@
 
     <!-- Settings: about -->
     <string name="section_about">About</string>
+
+    <!-- Workout titles (derived in UI from type + distance; the domain stores English for fixture parity) -->
+    <string name="workout_title_easy">%1$skm Easy Run</string>
+    <string name="workout_title_tempo">%1$skm Tempo Run</string>
+    <string name="workout_title_interval">Intervals (%1$skm)</string>
+    <string name="workout_title_long">%1$skm Long Run</string>
+    <string name="workout_title_rest">Rest Day</string>
+    <string name="workout_title_cross">Cross Training</string>
+
+    <!-- Week themes (map the English labels stored in the plan payload) -->
+    <string name="week_theme_foundation">Foundation Week</string>
+    <string name="week_theme_taper_begins">Taper Begins</string>
+    <string name="week_theme_race_prep">Race Prep</string>
+    <string name="week_theme_race_week">Race Week</string>
+    <string name="week_theme_recovery">Recovery Week</string>
+    <string name="week_theme_recovery_50">Recovery Week (50+ protocol)</string>
+    <string name="week_theme_base">Base Building</string>
+    <string name="week_theme_strength">Strength Phase</string>
+    <string name="week_theme_peak">Peak Training</string>
+
+    <!-- Insight chip titles -->
+    <string name="insight_taper_week">Taper Week</string>
+    <string name="insight_recovery_week">Recovery Week</string>
+    <string name="insight_week_1_welcome">Welcome to Week 1!</string>
+    <string name="insight_high_consistency">Outstanding Consistency!</string>
+    <string name="insight_low_consistency">Consistency Needs Work</string>
+    <string name="insight_back_on_track">Get Back on Track</string>
+    <string name="insight_on_track_week">On Track This Week</string>
+    <string name="insight_behind_week">Behind This Week</string>
+    <string name="insight_easy_too_fast">Easy Runs Too Fast</string>
+    <string name="insight_high_rpe_easy">Easy Runs Feeling Hard</string>
+    <string name="insight_fatigue_signs">Signs of Fatigue</string>
+    <string name="insight_missed_long_run">Long Run Missed</string>
+    <string name="insight_streak">%1$d-Day Streak!</string>
+    <string name="insight_key_tomorrow">Key Session Tomorrow</string>
+    <string name="insight_race_day">Race Day!</string>
+    <plurals name="insight_days_to_race">
+        <item quantity="one">%1$d Day to Race</item>
+        <item quantity="other">%1$d Days to Race</item>
+    </plurals>
+    <plurals name="insight_weeks_left_soon">
+        <item quantity="one">Almost There — %1$d Week Left</item>
+        <item quantity="other">Almost There — %1$d Weeks Left</item>
+    </plurals>
+    <string name="insight_weeks_to_race">%1$d Weeks to %2$s</string>
+    <string name="home_chip_weeks">%1$d weeks</string>
+    <string name="home_chip_days_per_week">%1$d days/week</string>
 </resources>

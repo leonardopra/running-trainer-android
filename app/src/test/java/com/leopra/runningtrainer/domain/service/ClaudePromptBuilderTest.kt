@@ -111,4 +111,33 @@ class ClaudePromptBuilderTest {
 
         assertEquals(256, request.maxTokens)
     }
+
+    @Test
+    fun `buildEnrichmentPrompt asks for the preferences locale language`() {
+        val request = ClaudePromptBuilder.buildEnrichmentPrompt(
+            week = makeWeek(),
+            goalType = GoalType.fiveK,
+            fitnessLevel = FitnessLevel.beginner,
+            preferences = UserPreferencesDto(localeCode = "it")
+        )
+
+        assertTrue(request.prompt.contains("in Italian"))
+    }
+
+    @Test
+    fun `buildPostWorkoutPrompt defaults to English and honors localeCode`() {
+        val workout = Workout(
+            id = "w1",
+            type = WorkoutType.easyRun,
+            dayOfWeek = 1,
+            effortLevel = EffortLevel.easy,
+            title = "Easy"
+        )
+
+        val defaultRequest = ClaudePromptBuilder.buildPostWorkoutPrompt(workout, age = null)
+        val germanRequest = ClaudePromptBuilder.buildPostWorkoutPrompt(workout, age = null, localeCode = "de")
+
+        assertTrue(defaultRequest.systemPrompt!!.contains("Respond in English"))
+        assertTrue(germanRequest.systemPrompt!!.contains("Respond in German"))
+    }
 }

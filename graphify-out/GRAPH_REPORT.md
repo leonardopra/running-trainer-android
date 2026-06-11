@@ -1,11 +1,11 @@
 # Graph Report - .  (2026-06-11)
 
 ## Corpus Check
-- 58 files · ~31,751 words
+- 58 files · ~40,853 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 365 nodes · 307 edges · 62 communities detected
+- 372 nodes · 314 edges · 62 communities detected
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
@@ -80,9 +80,9 @@
 4. `OnboardingViewModel` - 11 edges
 5. `AppModule` - 11 edges
 6. `OnboardingScreensTest` - 10 edges
-7. `TrainingPlanRepository` - 10 edges
-8. `MainViewModel` - 9 edges
-9. `ClaudePromptBuilderTest` - 8 edges
+7. `ClaudePromptBuilderTest` - 10 edges
+8. `TrainingPlanRepository` - 10 edges
+9. `MainViewModel` - 9 edges
 10. `ClaudeResponseParserTest` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -112,36 +112,36 @@ Cohesion: 0.12
 Nodes (2): LocalSettingsRepository, LocalTrainingPlanRepository
 
 ### Community 1 - "Community 1"
-Cohesion: 0.13
-Nodes (4): SerializableTrainingPlan, SerializableTrainingWeek, SerializableWorkout, TrainingPlanRepository
+Cohesion: 0.12
+Nodes (0): 
 
 ### Community 2 - "Community 2"
-Cohesion: 0.13
-Nodes (13): CoachingInsight, InsightType, PaceDataPoint, PaceZone, ProgressStats, RpeDataPoint, TrainingPlan, TrainingWeek (+5 more)
+Cohesion: 0.12
+Nodes (14): CoachingInsight, InsightKind, InsightType, PaceDataPoint, PaceZone, ProgressStats, RpeDataPoint, TrainingPlan (+6 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.13
-Nodes (1): PlanGenerator
+Nodes (4): SerializableTrainingPlan, SerializableTrainingWeek, SerializableWorkout, TrainingPlanRepository
 
 ### Community 4 - "Community 4"
-Cohesion: 0.14
-Nodes (1): WorkoutDetailScreenTest
+Cohesion: 0.13
+Nodes (1): PlanGenerator
 
 ### Community 5 - "Community 5"
 Cohesion: 0.14
-Nodes (3): OnboardingFormState, OnboardingUiState, OnboardingViewModel
+Nodes (1): WorkoutDetailScreenTest
 
 ### Community 6 - "Community 6"
 Cohesion: 0.14
-Nodes (0): 
+Nodes (3): OnboardingFormState, OnboardingUiState, OnboardingViewModel
 
 ### Community 7 - "Community 7"
 Cohesion: 0.14
-Nodes (4): Keys, LocalSettingsStore, PrivacyScreen(), SettingsRepository
+Nodes (0): 
 
 ### Community 8 - "Community 8"
-Cohesion: 0.15
-Nodes (0): 
+Cohesion: 0.14
+Nodes (4): Keys, LocalSettingsStore, PrivacyScreen(), SettingsRepository
 
 ### Community 9 - "Community 9"
 Cohesion: 0.17
@@ -153,15 +153,15 @@ Nodes (1): OnboardingScreensTest
 
 ### Community 11 - "Community 11"
 Cohesion: 0.18
-Nodes (5): FixedIdProvider, FixtureExpected, FixtureRequest, PlanFixture, PlanGeneratorFixtureTest
+Nodes (1): ClaudePromptBuilderTest
 
 ### Community 12 - "Community 12"
 Cohesion: 0.18
-Nodes (3): MainUiState, MainViewModel, Rationale: Room stores plan as JSON blob (not normalized rows)
+Nodes (5): FixedIdProvider, FixtureExpected, FixtureRequest, PlanFixture, PlanGeneratorFixtureTest
 
 ### Community 13 - "Community 13"
-Cohesion: 0.22
-Nodes (1): ClaudePromptBuilderTest
+Cohesion: 0.18
+Nodes (3): MainUiState, MainViewModel, Rationale: Room stores plan as JSON blob (not normalized rows)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.22
@@ -229,15 +229,15 @@ Nodes (1): ApiKeyCipher
 
 ### Community 30 - "Community 30"
 Cohesion: 0.4
-Nodes (1): EnrichmentResult
+Nodes (1): ClaudePromptBuilder
 
 ### Community 31 - "Community 31"
-Cohesion: 0.5
-Nodes (1): SettingsViewModel
+Cohesion: 0.4
+Nodes (1): EnrichmentResult
 
 ### Community 32 - "Community 32"
 Cohesion: 0.5
-Nodes (0): 
+Nodes (1): SettingsViewModel
 
 ### Community 33 - "Community 33"
 Cohesion: 0.5
@@ -245,15 +245,15 @@ Nodes (0):
 
 ### Community 34 - "Community 34"
 Cohesion: 0.5
-Nodes (3): PlanGenerationMetadata, PlanGenerationRequest, PlanGenerationResult
+Nodes (0): 
 
 ### Community 35 - "Community 35"
 Cohesion: 0.5
-Nodes (1): ClaudeResponseParser
+Nodes (3): PlanGenerationMetadata, PlanGenerationRequest, PlanGenerationResult
 
 ### Community 36 - "Community 36"
 Cohesion: 0.5
-Nodes (1): ClaudePromptBuilder
+Nodes (1): ClaudeResponseParser
 
 ### Community 37 - "Community 37"
 Cohesion: 0.5
@@ -356,7 +356,7 @@ Cohesion: 1.0
 Nodes (1): Rationale: PaceZone.label kept as domain English strings for serialization/testing only
 
 ## Knowledge Gaps
-- **45 isolated node(s):** `PlanFixture`, `FixtureExpected`, `MainUiState`, `PlanUiState`, `OnboardingFormState` (+40 more)
+- **46 isolated node(s):** `PlanFixture`, `FixtureExpected`, `MainUiState`, `PlanUiState`, `OnboardingFormState` (+41 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **Thin community `Community 43`** (2 nodes): `RunningTrainerApp.kt`, `RunningTrainerApp()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -400,17 +400,17 @@ Nodes (1): Rationale: PaceZone.label kept as domain English strings for serializ
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `TrainingPlanRepository` connect `Community 1` to `Community 7`?**
+- **Why does `TrainingPlanRepository` connect `Community 3` to `Community 8`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `PlanGenerator` connect `Community 3` to `Community 14`?**
+- **Why does `PlanGenerator` connect `Community 4` to `Community 14`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `PlanFixture`, `FixtureExpected`, `MainUiState` to the rest of the system?**
-  _45 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _46 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.12 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.13 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.12 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.13 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.12 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.13 - nodes in this community are weakly interconnected._

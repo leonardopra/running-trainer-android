@@ -206,4 +206,51 @@
 
     <!-- Settings: about -->
     <string name="section_about">Über</string>
+
+    <!-- Workout titles (derived in UI from type + distance; the domain stores English for fixture parity) -->
+    <string name="workout_title_easy">%1$s km Lockerer Lauf</string>
+    <string name="workout_title_tempo">%1$s km Tempolauf</string>
+    <string name="workout_title_interval">Intervalle (%1$s km)</string>
+    <string name="workout_title_long">%1$s km Langer Lauf</string>
+    <string name="workout_title_rest">Ruhetag</string>
+    <string name="workout_title_cross">Crosstraining</string>
+
+    <!-- Week themes (map the English labels stored in the plan payload) -->
+    <string name="week_theme_foundation">Eingewöhnungswoche</string>
+    <string name="week_theme_taper_begins">Tapering Beginnt</string>
+    <string name="week_theme_race_prep">Wettkampfvorbereitung</string>
+    <string name="week_theme_race_week">Wettkampfwoche</string>
+    <string name="week_theme_recovery">Erholungswoche</string>
+    <string name="week_theme_recovery_50">Erholungswoche (50+-Protokoll)</string>
+    <string name="week_theme_base">Grundlagenaufbau</string>
+    <string name="week_theme_strength">Kraftphase</string>
+    <string name="week_theme_peak">Spitzentraining</string>
+
+    <!-- Insight chip titles -->
+    <string name="insight_taper_week">Tapering-Woche</string>
+    <string name="insight_recovery_week">Erholungswoche</string>
+    <string name="insight_week_1_welcome">Willkommen zu Woche 1!</string>
+    <string name="insight_high_consistency">Hervorragende Konstanz!</string>
+    <string name="insight_low_consistency">Konstanz Ausbaufähig</string>
+    <string name="insight_back_on_track">Zurück in die Spur</string>
+    <string name="insight_on_track_week">Diese Woche im Plan</string>
+    <string name="insight_behind_week">Diese Woche im Rückstand</string>
+    <string name="insight_easy_too_fast">Lockere Läufe zu Schnell</string>
+    <string name="insight_high_rpe_easy">Lockere Läufe zu Anstrengend</string>
+    <string name="insight_fatigue_signs">Anzeichen von Ermüdung</string>
+    <string name="insight_missed_long_run">Langer Lauf Verpasst</string>
+    <string name="insight_streak">%1$d-Tage-Serie!</string>
+    <string name="insight_key_tomorrow">Schlüsseleinheit Morgen</string>
+    <string name="insight_race_day">Wettkampftag!</string>
+    <plurals name="insight_days_to_race">
+        <item quantity="one">%1$d Tag bis zum Wettkampf</item>
+        <item quantity="other">%1$d Tage bis zum Wettkampf</item>
+    </plurals>
+    <plurals name="insight_weeks_left_soon">
+        <item quantity="one">Fast Geschafft — %1$d Woche</item>
+        <item quantity="other">Fast Geschafft — %1$d Wochen</item>
+    </plurals>
+    <string name="insight_weeks_to_race">%1$d Wochen bis zum Wettkampf (%2$s)</string>
+    <string name="home_chip_weeks">%1$d Wochen</string>
+    <string name="home_chip_days_per_week">%1$d Tage/Woche</string>
 </resources>

@@ -206,4 +206,51 @@
 
     <!-- Settings: about -->
     <string name="section_about">Informazioni</string>
+
+    <!-- Workout titles (derived in UI from type + distance; the domain stores English for fixture parity) -->
+    <string name="workout_title_easy">Corsa Facile da %1$s km</string>
+    <string name="workout_title_tempo">Corsa Tempo da %1$s km</string>
+    <string name="workout_title_interval">Intervalli (%1$s km)</string>
+    <string name="workout_title_long">Corsa Lunga da %1$s km</string>
+    <string name="workout_title_rest">Giorno di Riposo</string>
+    <string name="workout_title_cross">Cross Training</string>
+
+    <!-- Week themes (map the English labels stored in the plan payload) -->
+    <string name="week_theme_foundation">Settimana di Adattamento</string>
+    <string name="week_theme_taper_begins">Inizio Tapering</string>
+    <string name="week_theme_race_prep">Preparazione alla Gara</string>
+    <string name="week_theme_race_week">Settimana di Gara</string>
+    <string name="week_theme_recovery">Settimana di Recupero</string>
+    <string name="week_theme_recovery_50">Settimana di Recupero (protocollo 50+)</string>
+    <string name="week_theme_base">Costruzione della Base</string>
+    <string name="week_theme_strength">Fase di Forza</string>
+    <string name="week_theme_peak">Picco di Allenamento</string>
+
+    <!-- Insight chip titles -->
+    <string name="insight_taper_week">Settimana di Tapering</string>
+    <string name="insight_recovery_week">Settimana di Recupero</string>
+    <string name="insight_week_1_welcome">Benvenuto alla Settimana 1!</string>
+    <string name="insight_high_consistency">Costanza Eccezionale!</string>
+    <string name="insight_low_consistency">Costanza da Migliorare</string>
+    <string name="insight_back_on_track">Torna in Carreggiata</string>
+    <string name="insight_on_track_week">In Linea Questa Settimana</string>
+    <string name="insight_behind_week">In Ritardo Questa Settimana</string>
+    <string name="insight_easy_too_fast">Corse Facili Troppo Veloci</string>
+    <string name="insight_high_rpe_easy">Corse Facili Faticose</string>
+    <string name="insight_fatigue_signs">Segnali di Affaticamento</string>
+    <string name="insight_missed_long_run">Corsa Lunga Saltata</string>
+    <string name="insight_streak">Serie di %1$d Giorni!</string>
+    <string name="insight_key_tomorrow">Sessione Chiave Domani</string>
+    <string name="insight_race_day">Giorno della Gara!</string>
+    <plurals name="insight_days_to_race">
+        <item quantity="one">%1$d Giorno alla Gara</item>
+        <item quantity="other">%1$d Giorni alla Gara</item>
+    </plurals>
+    <plurals name="insight_weeks_left_soon">
+        <item quantity="one">Ci Siamo Quasi — %1$d Settimana</item>
+        <item quantity="other">Ci Siamo Quasi — %1$d Settimane</item>
+    </plurals>
+    <string name="insight_weeks_to_race">%1$d Settimane alla Gara (%2$s)</string>
+    <string name="home_chip_weeks">%1$d settimane</string>
+    <string name="home_chip_days_per_week">%1$d giorni/settimana</string>
 </resources>

@@ -125,7 +125,7 @@ fun RunHistoryScreen(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Column(modifier = Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                        Text(workout.title, style = MaterialTheme.typography.bodyLarge)
+                        Text(workout.displayTitle(), style = MaterialTheme.typography.bodyLarge)
                         Text(
                             workoutTypeLabelHistory(workout.type),
                             style = MaterialTheme.typography.labelMedium,

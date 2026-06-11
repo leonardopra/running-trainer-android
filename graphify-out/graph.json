@@ -235,7 +235,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L1",
       "id": "app_src_androidtest_java_com_leopra_runningtrainer_ui_screens_workoutdetailscreentest_kt",
-      "community": 4,
+      "community": 5,
       "norm_label": "workoutdetailscreentest.kt"
     },
     {
@@ -244,7 +244,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L22",
       "id": "workoutdetailscreentest_workoutdetailscreentest",
-      "community": 4,
+      "community": 5,
       "norm_label": "workoutdetailscreentest"
     },
     {
@@ -253,7 +253,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L30",
       "id": "workoutdetailscreentest_workoutdetailscreentest_makeworkout",
-      "community": 4,
+      "community": 5,
       "norm_label": ".makeworkout()"
     },
     {
@@ -262,7 +262,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L59",
       "id": "workoutdetailscreentest_workoutdetailscreentest_workoutdetailscreen_nullworkout_showsnotfound",
-      "community": 4,
+      "community": 5,
       "norm_label": ".workoutdetailscreen_nullworkout_showsnotfound()"
     },
     {
@@ -271,7 +271,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L77",
       "id": "workoutdetailscreentest_workoutdetailscreentest_workoutdetailscreen_nullworkout_backbuttoninvokescallback",
-      "community": 4,
+      "community": 5,
       "norm_label": ".workoutdetailscreen_nullworkout_backbuttoninvokescallback()"
     },
     {
@@ -280,7 +280,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L98",
       "id": "workoutdetailscreentest_workoutdetailscreentest_workoutdetailscreen_showsworkouttitle",
-      "community": 4,
+      "community": 5,
       "norm_label": ".workoutdetailscreen_showsworkouttitle()"
     },
     {
@@ -289,7 +289,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L115",
       "id": "workoutdetailscreentest_workoutdetailscreentest_workoutdetailscreen_showsmarkdonebutton_whennotcompleted",
-      "community": 4,
+      "community": 5,
       "norm_label": ".workoutdetailscreen_showsmarkdonebutton_whennotcompleted()"
     },
     {
@@ -298,7 +298,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L132",
       "id": "workoutdetailscreentest_workoutdetailscreentest_workoutdetailscreen_showsupdatelogbutton_whencompleted",
-      "community": 4,
+      "community": 5,
       "norm_label": ".workoutdetailscreen_showsupdatelogbutton_whencompleted()"
     },
     {
@@ -307,7 +307,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L150",
       "id": "workoutdetailscreentest_workoutdetailscreentest_workoutdetailscreen_showsfeelingchips",
-      "community": 4,
+      "community": 5,
       "norm_label": ".workoutdetailscreen_showsfeelingchips()"
     },
     {
@@ -316,7 +316,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L172",
       "id": "workoutdetailscreentest_workoutdetailscreentest_workoutdetailscreen_markdone_invokesonsave",
-      "community": 4,
+      "community": 5,
       "norm_label": ".workoutdetailscreen_markdone_invokesonsave()"
     },
     {
@@ -325,7 +325,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L191",
       "id": "workoutdetailscreentest_workoutdetailscreentest_workoutdetailscreen_clearlog_invokesonclear",
-      "community": 4,
+      "community": 5,
       "norm_label": ".workoutdetailscreen_clearlog_invokesonclear()"
     },
     {
@@ -334,7 +334,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L210",
       "id": "workoutdetailscreentest_workoutdetailscreentest_workoutdetailscreen_showsperceivedeffortslider",
-      "community": 4,
+      "community": 5,
       "norm_label": ".workoutdetailscreen_showsperceivedeffortslider()"
     },
     {
@@ -343,7 +343,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L227",
       "id": "workoutdetailscreentest_workoutdetailscreentest_workoutdetailscreen_logfields_aredisplayed",
-      "community": 4,
+      "community": 5,
       "norm_label": ".workoutdetailscreen_logfields_aredisplayed()"
     },
     {
@@ -352,7 +352,7 @@
       "source_file": "app/src/androidTest/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreenTest.kt",
       "source_location": "L246",
       "id": "workoutdetailscreentest_workoutdetailscreentest_workoutdetailscreen_feelingselection_affectssavecallback",
-      "community": 4,
+      "community": 5,
       "norm_label": ".workoutdetailscreen_feelingselection_affectssavecallback()"
     },
     {
@@ -478,7 +478,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
       "source_location": "L1",
       "id": "app_src_test_java_com_leopra_runningtrainer_domain_service_claudepromptbuildertest_kt",
-      "community": 13,
+      "community": 11,
       "norm_label": "claudepromptbuildertest.kt"
     },
     {
@@ -487,7 +487,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
       "source_location": "L16",
       "id": "claudepromptbuildertest_claudepromptbuildertest",
-      "community": 13,
+      "community": 11,
       "norm_label": "claudepromptbuildertest"
     },
     {
@@ -496,7 +496,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
       "source_location": "L18",
       "id": "claudepromptbuildertest_claudepromptbuildertest_makeworkout",
-      "community": 13,
+      "community": 11,
       "norm_label": ".makeworkout()"
     },
     {
@@ -505,7 +505,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
       "source_location": "L27",
       "id": "claudepromptbuildertest_claudepromptbuildertest_makeweek",
-      "community": 13,
+      "community": 11,
       "norm_label": ".makeweek()"
     },
     {
@@ -514,7 +514,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
       "source_location": "L35",
       "id": "claudepromptbuildertest_claudepromptbuildertest_buildenrichmentprompt_contains_weeknumber_goaltype_and_fitnesslevel",
-      "community": 13,
+      "community": 11,
       "norm_label": ".`buildenrichmentprompt contains weeknumber, goaltype and fitnesslevel`()"
     },
     {
@@ -523,7 +523,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
       "source_location": "L49",
       "id": "claudepromptbuildertest_claudepromptbuildertest_buildenrichmentprompt_with_age_includes_max_hr_with_correct_value",
-      "community": 13,
+      "community": 11,
       "norm_label": ".`buildenrichmentprompt with age includes max hr with correct value`()"
     },
     {
@@ -532,7 +532,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
       "source_location": "L64",
       "id": "claudepromptbuildertest_claudepromptbuildertest_buildenrichmentprompt_with_null_age_does_not_include_max_hr",
-      "community": 13,
+      "community": 11,
       "norm_label": ".`buildenrichmentprompt with null age does not include max hr`()"
     },
     {
@@ -541,7 +541,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
       "source_location": "L76",
       "id": "claudepromptbuildertest_claudepromptbuildertest_buildpostworkoutprompt_contains_workout_type_distance_rpe_and_feeling",
-      "community": 13,
+      "community": 11,
       "norm_label": ".`buildpostworkoutprompt contains workout type, distance, rpe and feeling`()"
     },
     {
@@ -550,8 +550,26 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
       "source_location": "L100",
       "id": "claudepromptbuildertest_claudepromptbuildertest_buildpostworkoutprompt_returns_clauderequest_with_maxtokens_256",
-      "community": 13,
+      "community": 11,
       "norm_label": ".`buildpostworkoutprompt returns clauderequest with maxtokens 256`()"
+    },
+    {
+      "label": ".`buildEnrichmentPrompt asks for the preferences locale language`()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
+      "source_location": "L115",
+      "id": "claudepromptbuildertest_claudepromptbuildertest_buildenrichmentprompt_asks_for_the_preferences_locale_language",
+      "community": 11,
+      "norm_label": ".`buildenrichmentprompt asks for the preferences locale language`()"
+    },
+    {
+      "label": ".`buildPostWorkoutPrompt defaults to English and honors localeCode`()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
+      "source_location": "L127",
+      "id": "claudepromptbuildertest_claudepromptbuildertest_buildpostworkoutprompt_defaults_to_english_and_honors_localecode",
+      "community": 11,
+      "norm_label": ".`buildpostworkoutprompt defaults to english and honors localecode`()"
     },
     {
       "label": "ProgressStatsCalculatorTest.kt",
@@ -676,7 +694,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/PlanGeneratorFixtureTest.kt",
       "source_location": "L1",
       "id": "app_src_test_java_com_leopra_runningtrainer_domain_service_plangeneratorfixturetest_kt",
-      "community": 11,
+      "community": 12,
       "norm_label": "plangeneratorfixturetest.kt"
     },
     {
@@ -685,7 +703,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/PlanGeneratorFixtureTest.kt",
       "source_location": "L17",
       "id": "plangeneratorfixturetest_plangeneratorfixturetest",
-      "community": 11,
+      "community": 12,
       "norm_label": "plangeneratorfixturetest"
     },
     {
@@ -694,7 +712,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/PlanGeneratorFixtureTest.kt",
       "source_location": "L21",
       "id": "plangeneratorfixturetest_plangeneratorfixturetest_matchesfivekbeginnerfixture",
-      "community": 11,
+      "community": 12,
       "norm_label": ".matchesfivekbeginnerfixture()"
     },
     {
@@ -703,7 +721,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/PlanGeneratorFixtureTest.kt",
       "source_location": "L41",
       "id": "plangeneratorfixturetest_plangeneratorfixturetest_matchesmarathonadvancedfixture",
-      "community": 11,
+      "community": 12,
       "norm_label": ".matchesmarathonadvancedfixture()"
     },
     {
@@ -712,7 +730,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/PlanGeneratorFixtureTest.kt",
       "source_location": "L61",
       "id": "plangeneratorfixturetest_plangeneratorfixturetest_loadfixture",
-      "community": 11,
+      "community": 12,
       "norm_label": ".loadfixture()"
     },
     {
@@ -721,7 +739,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/PlanGeneratorFixtureTest.kt",
       "source_location": "L74",
       "id": "plangeneratorfixturetest_fixedidprovider",
-      "community": 11,
+      "community": 12,
       "norm_label": "fixedidprovider"
     },
     {
@@ -730,7 +748,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/PlanGeneratorFixtureTest.kt",
       "source_location": "L77",
       "id": "plangeneratorfixturetest_fixedidprovider_invoke",
-      "community": 11,
+      "community": 12,
       "norm_label": ".invoke()"
     },
     {
@@ -739,7 +757,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/PlanGeneratorFixtureTest.kt",
       "source_location": "L83",
       "id": "plangeneratorfixturetest_planfixture",
-      "community": 11,
+      "community": 12,
       "norm_label": "planfixture"
     },
     {
@@ -748,7 +766,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/PlanGeneratorFixtureTest.kt",
       "source_location": "L90",
       "id": "plangeneratorfixturetest_fixturerequest",
-      "community": 11,
+      "community": 12,
       "norm_label": "fixturerequest"
     },
     {
@@ -757,7 +775,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/PlanGeneratorFixtureTest.kt",
       "source_location": "L98",
       "id": "plangeneratorfixturetest_fixturerequest_todomain",
-      "community": 11,
+      "community": 12,
       "norm_label": ".todomain()"
     },
     {
@@ -766,7 +784,7 @@
       "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/PlanGeneratorFixtureTest.kt",
       "source_location": "L107",
       "id": "plangeneratorfixturetest_fixtureexpected",
-      "community": 11,
+      "community": 12,
       "norm_label": "fixtureexpected"
     },
     {
@@ -865,7 +883,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/MainViewModel.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_ui_mainviewmodel_kt",
-      "community": 12,
+      "community": 13,
       "norm_label": "mainviewmodel.kt"
     },
     {
@@ -874,7 +892,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/MainViewModel.kt",
       "source_location": "L18",
       "id": "mainviewmodel_mainuistate",
-      "community": 12,
+      "community": 13,
       "norm_label": "mainuistate"
     },
     {
@@ -883,7 +901,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/MainViewModel.kt",
       "source_location": "L31",
       "id": "mainviewmodel_mainviewmodel",
-      "community": 12,
+      "community": 13,
       "norm_label": "mainviewmodel"
     },
     {
@@ -892,7 +910,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/MainViewModel.kt",
       "source_location": "L44",
       "id": "mainviewmodel_mainviewmodel_updateonboardingstate",
-      "community": 12,
+      "community": 13,
       "norm_label": ".updateonboardingstate()"
     },
     {
@@ -901,7 +919,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/MainViewModel.kt",
       "source_location": "L78",
       "id": "mainviewmodel_mainviewmodel_gohome",
-      "community": 12,
+      "community": 13,
       "norm_label": ".gohome()"
     },
     {
@@ -910,7 +928,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/MainViewModel.kt",
       "source_location": "L83",
       "id": "mainviewmodel_mainviewmodel_navigateto",
-      "community": 12,
+      "community": 13,
       "norm_label": ".navigateto()"
     },
     {
@@ -919,7 +937,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/MainViewModel.kt",
       "source_location": "L87",
       "id": "mainviewmodel_mainviewmodel_opensettings",
-      "community": 12,
+      "community": 13,
       "norm_label": ".opensettings()"
     },
     {
@@ -928,7 +946,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/MainViewModel.kt",
       "source_location": "L91",
       "id": "mainviewmodel_mainviewmodel_openpacecalc",
-      "community": 12,
+      "community": 13,
       "norm_label": ".openpacecalc()"
     },
     {
@@ -937,7 +955,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/MainViewModel.kt",
       "source_location": "L95",
       "id": "mainviewmodel_mainviewmodel_openstretching",
-      "community": 12,
+      "community": 13,
       "norm_label": ".openstretching()"
     },
     {
@@ -946,7 +964,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/MainViewModel.kt",
       "source_location": "L100",
       "id": "mainviewmodel_mainviewmodel_openprivacy",
-      "community": 12,
+      "community": 13,
       "norm_label": ".openprivacy()"
     },
     {
@@ -1036,7 +1054,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_ui_onboardingviewmodel_kt",
-      "community": 5,
+      "community": 6,
       "norm_label": "onboardingviewmodel.kt"
     },
     {
@@ -1045,7 +1063,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L27",
       "id": "onboardingviewmodel_onboardingformstate",
-      "community": 5,
+      "community": 6,
       "norm_label": "onboardingformstate"
     },
     {
@@ -1054,7 +1072,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L39",
       "id": "onboardingviewmodel_onboardinguistate",
-      "community": 5,
+      "community": 6,
       "norm_label": "onboardinguistate"
     },
     {
@@ -1063,7 +1081,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L49",
       "id": "onboardingviewmodel_onboardingviewmodel",
-      "community": 5,
+      "community": 6,
       "norm_label": "onboardingviewmodel"
     },
     {
@@ -1072,7 +1090,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L75",
       "id": "onboardingviewmodel_onboardingviewmodel_selectgoal",
-      "community": 5,
+      "community": 6,
       "norm_label": ".selectgoal()"
     },
     {
@@ -1081,7 +1099,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L80",
       "id": "onboardingviewmodel_onboardingviewmodel_updateraceconfig",
-      "community": 5,
+      "community": 6,
       "norm_label": ".updateraceconfig()"
     },
     {
@@ -1090,7 +1108,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L84",
       "id": "onboardingviewmodel_onboardingviewmodel_continuefromraceconfig",
-      "community": 5,
+      "community": 6,
       "norm_label": ".continuefromraceconfig()"
     },
     {
@@ -1099,7 +1117,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L88",
       "id": "onboardingviewmodel_onboardingviewmodel_selectfitnesslevel",
-      "community": 5,
+      "community": 6,
       "norm_label": ".selectfitnesslevel()"
     },
     {
@@ -1108,7 +1126,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L93",
       "id": "onboardingviewmodel_onboardingviewmodel_updatetrainingdays",
-      "community": 5,
+      "community": 6,
       "norm_label": ".updatetrainingdays()"
     },
     {
@@ -1117,7 +1135,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L97",
       "id": "onboardingviewmodel_onboardingviewmodel_continuefromdays",
-      "community": 5,
+      "community": 6,
       "norm_label": ".continuefromdays()"
     },
     {
@@ -1126,7 +1144,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L101",
       "id": "onboardingviewmodel_onboardingviewmodel_updateprofile",
-      "community": 5,
+      "community": 6,
       "norm_label": ".updateprofile()"
     },
     {
@@ -1135,7 +1153,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L107",
       "id": "onboardingviewmodel_onboardingviewmodel_generateplan",
-      "community": 5,
+      "community": 6,
       "norm_label": ".generateplan()"
     },
     {
@@ -1144,7 +1162,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L161",
       "id": "onboardingviewmodel_onboardingviewmodel_resetlocaldata",
-      "community": 5,
+      "community": 6,
       "norm_label": ".resetlocaldata()"
     },
     {
@@ -1153,7 +1171,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/OnboardingViewModel.kt",
       "source_location": "L174",
       "id": "onboardingviewmodel_onboardingviewmodel_startnewplan",
-      "community": 5,
+      "community": 6,
       "norm_label": ".startnewplan()"
     },
     {
@@ -1162,7 +1180,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/SettingsViewModel.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_ui_settingsviewmodel_kt",
-      "community": 31,
+      "community": 32,
       "norm_label": "settingsviewmodel.kt"
     },
     {
@@ -1171,7 +1189,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/SettingsViewModel.kt",
       "source_location": "L21",
       "id": "settingsviewmodel_settingsviewmodel",
-      "community": 31,
+      "community": 32,
       "norm_label": "settingsviewmodel"
     },
     {
@@ -1180,7 +1198,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/SettingsViewModel.kt",
       "source_location": "L30",
       "id": "settingsviewmodel_settingsviewmodel_savesettings",
-      "community": 31,
+      "community": 32,
       "norm_label": ".savesettings()"
     },
     {
@@ -1189,7 +1207,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/SettingsViewModel.kt",
       "source_location": "L71",
       "id": "settingsviewmodel_settingsviewmodel_savegoaltime",
-      "community": 31,
+      "community": 32,
       "norm_label": ".savegoaltime()"
     },
     {
@@ -1234,7 +1252,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreen.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_ui_screens_workoutdetailscreen_kt",
-      "community": 32,
+      "community": 33,
       "norm_label": "workoutdetailscreen.kt"
     },
     {
@@ -1243,7 +1261,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreen.kt",
       "source_location": "L65",
       "id": "workoutdetailscreen_workoutdetailscreen",
-      "community": 32,
+      "community": 33,
       "norm_label": "workoutdetailscreen()"
     },
     {
@@ -1252,7 +1270,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreen.kt",
       "source_location": "L411",
       "id": "workoutdetailscreen_detailfield",
-      "community": 32,
+      "community": 33,
       "norm_label": "detailfield()"
     },
     {
@@ -1261,7 +1279,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/WorkoutDetailScreen.kt",
       "source_location": "L439",
       "id": "workoutdetailscreen_feelingchip",
-      "community": 32,
+      "community": 33,
       "norm_label": "feelingchip()"
     },
     {
@@ -1315,7 +1333,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/RunHistoryScreen.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_ui_screens_runhistoryscreen_kt",
-      "community": 33,
+      "community": 34,
       "norm_label": "runhistoryscreen.kt"
     },
     {
@@ -1324,7 +1342,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/RunHistoryScreen.kt",
       "source_location": "L45",
       "id": "runhistoryscreen_runhistoryscreen",
-      "community": 33,
+      "community": 34,
       "norm_label": "runhistoryscreen()"
     },
     {
@@ -1333,7 +1351,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/RunHistoryScreen.kt",
       "source_location": "L177",
       "id": "runhistoryscreen_workouttypelabelhistory",
-      "community": 33,
+      "community": 34,
       "norm_label": "workouttypelabelhistory()"
     },
     {
@@ -1342,7 +1360,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/RunHistoryScreen.kt",
       "source_location": "L188",
       "id": "runhistoryscreen_feelingemojihistory",
-      "community": 33,
+      "community": 34,
       "norm_label": "feelingemojihistory()"
     },
     {
@@ -1351,7 +1369,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_ui_screens_onboardingscreens_kt",
-      "community": 6,
+      "community": 7,
       "norm_label": "onboardingscreens.kt"
     },
     {
@@ -1360,7 +1378,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L65",
       "id": "onboardingscreens_onboardingprogress",
-      "community": 6,
+      "community": 7,
       "norm_label": "onboardingprogress()"
     },
     {
@@ -1369,7 +1387,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L86",
       "id": "onboardingscreens_continuebutton",
-      "community": 6,
+      "community": 7,
       "norm_label": "continuebutton()"
     },
     {
@@ -1378,7 +1396,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L110",
       "id": "onboardingscreens_filledfield",
-      "community": 6,
+      "community": 7,
       "norm_label": "filledfield()"
     },
     {
@@ -1387,7 +1405,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L142",
       "id": "onboardingscreens_racedatefield",
-      "community": 6,
+      "community": 7,
       "norm_label": "racedatefield()"
     },
     {
@@ -1396,7 +1414,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L227",
       "id": "onboardingscreens_goalselectionscreen",
-      "community": 6,
+      "community": 7,
       "norm_label": "goalselectionscreen()"
     },
     {
@@ -1405,7 +1423,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L269",
       "id": "onboardingscreens_raceconfigscreen",
-      "community": 6,
+      "community": 7,
       "norm_label": "raceconfigscreen()"
     },
     {
@@ -1414,7 +1432,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L334",
       "id": "onboardingscreens_fitnessselectionscreen",
-      "community": 6,
+      "community": 7,
       "norm_label": "fitnessselectionscreen()"
     },
     {
@@ -1423,7 +1441,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L377",
       "id": "onboardingscreens_trainingdaysscreen",
-      "community": 6,
+      "community": 7,
       "norm_label": "trainingdaysscreen()"
     },
     {
@@ -1432,7 +1450,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L415",
       "id": "onboardingscreens_profilescreen",
-      "community": 6,
+      "community": 7,
       "norm_label": "profilescreen()"
     },
     {
@@ -1441,7 +1459,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L476",
       "id": "onboardingscreens_generatingplanscreen",
-      "community": 6,
+      "community": 7,
       "norm_label": "generatingplanscreen()"
     },
     {
@@ -1450,7 +1468,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L498",
       "id": "onboardingscreens_selectionlistscreen",
-      "community": 6,
+      "community": 7,
       "norm_label": "selectionlistscreen()"
     },
     {
@@ -1459,7 +1477,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L540",
       "id": "onboardingscreens_selectioncard",
-      "community": 6,
+      "community": 7,
       "norm_label": "selectioncard()"
     },
     {
@@ -1468,7 +1486,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/OnboardingScreens.kt",
       "source_location": "L574",
       "id": "onboardingscreens_durationchip",
-      "community": 6,
+      "community": 7,
       "norm_label": "durationchip()"
     },
     {
@@ -1477,115 +1495,142 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
-      "community": 8,
+      "community": 1,
       "norm_label": "homescreen.kt"
     },
     {
       "label": "HomeScreen()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L61",
+      "source_location": "L64",
       "id": "homescreen_homescreen",
-      "community": 8,
+      "community": 1,
       "norm_label": "homescreen()"
     },
     {
       "label": "NoPlanEmptyState()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L180",
+      "source_location": "L183",
       "id": "homescreen_noplanemptystate",
-      "community": 8,
+      "community": 1,
       "norm_label": "noplanemptystate()"
     },
     {
       "label": "HomeScreenSkeleton()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L221",
+      "source_location": "L224",
       "id": "homescreen_homescreenskeleton",
-      "community": 8,
+      "community": 1,
       "norm_label": "homescreenskeleton()"
     },
     {
       "label": "SurfaceCard()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L301",
+      "source_location": "L304",
       "id": "homescreen_surfacecard",
-      "community": 8,
+      "community": 1,
       "norm_label": "surfacecard()"
     },
     {
       "label": "typeLabel()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L320",
+      "source_location": "L323",
       "id": "homescreen_typelabel",
-      "community": 8,
+      "community": 1,
       "norm_label": "typelabel()"
     },
     {
       "label": "zoneDescription()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L330",
+      "source_location": "L333",
       "id": "homescreen_zonedescription",
-      "community": 8,
+      "community": 1,
       "norm_label": "zonedescription()"
     },
     {
       "label": "label()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L339",
+      "source_location": "L342",
       "id": "homescreen_label",
-      "community": 8,
+      "community": 1,
       "norm_label": "label()"
+    },
+    {
+      "label": "displayTitle()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
+      "source_location": "L353",
+      "id": "homescreen_displaytitle",
+      "community": 1,
+      "norm_label": "displaytitle()"
+    },
+    {
+      "label": "weekThemeLabel()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
+      "source_location": "L368",
+      "id": "homescreen_weekthemelabel",
+      "community": 1,
+      "norm_label": "weekthemelabel()"
+    },
+    {
+      "label": "titleText()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
+      "source_location": "L382",
+      "id": "homescreen_titletext",
+      "community": 1,
+      "norm_label": "titletext()"
     },
     {
       "label": "workoutTypeColor()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L349",
+      "source_location": "L406",
       "id": "homescreen_workouttypecolor",
-      "community": 8,
+      "community": 1,
       "norm_label": "workouttypecolor()"
     },
     {
       "label": "WorkoutTile()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L359",
+      "source_location": "L416",
       "id": "homescreen_workouttile",
-      "community": 8,
+      "community": 1,
       "norm_label": "workouttile()"
     },
     {
       "label": "PlanChip()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L410",
+      "source_location": "L467",
       "id": "homescreen_planchip",
-      "community": 8,
+      "community": 1,
       "norm_label": "planchip()"
     },
     {
       "label": "InsightChip()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L428",
+      "source_location": "L485",
       "id": "homescreen_insightchip",
-      "community": 8,
+      "community": 1,
       "norm_label": "insightchip()"
     },
     {
       "label": "insightColors()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L446",
+      "source_location": "L503",
       "id": "homescreen_insightcolors",
-      "community": 8,
+      "community": 1,
       "norm_label": "insightcolors()"
     },
     {
@@ -1711,7 +1756,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/PrivacyScreen.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_ui_screens_privacyscreen_kt",
-      "community": 7,
+      "community": 8,
       "norm_label": "privacyscreen.kt"
     },
     {
@@ -1720,7 +1765,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/PrivacyScreen.kt",
       "source_location": "L20",
       "id": "privacyscreen_privacyscreen",
-      "community": 7,
+      "community": 8,
       "norm_label": "privacyscreen()"
     },
     {
@@ -1729,7 +1774,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/PrivacyScreen.kt",
       "source_location": "L77",
       "id": "privacyscreen_privacysection",
-      "community": 7,
+      "community": 8,
       "norm_label": "privacysection()"
     },
     {
@@ -2080,7 +2125,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_data_repository_trainingplanrepository_kt",
-      "community": 7,
+      "community": 8,
       "norm_label": "trainingplanrepository.kt"
     },
     {
@@ -2089,7 +2134,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L11",
       "id": "trainingplanrepository_trainingplanrepository",
-      "community": 1,
+      "community": 3,
       "norm_label": "trainingplanrepository"
     },
     {
@@ -2098,7 +2143,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L12",
       "id": "trainingplanrepository_trainingplanrepository_observeactiveplan",
-      "community": 1,
+      "community": 3,
       "norm_label": ".observeactiveplan()"
     },
     {
@@ -2107,7 +2152,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L13",
       "id": "trainingplanrepository_trainingplanrepository_observeprogressstats",
-      "community": 1,
+      "community": 3,
       "norm_label": ".observeprogressstats()"
     },
     {
@@ -2116,7 +2161,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L14",
       "id": "trainingplanrepository_trainingplanrepository_generateandsaveplan",
-      "community": 1,
+      "community": 3,
       "norm_label": ".generateandsaveplan()"
     },
     {
@@ -2125,7 +2170,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L15",
       "id": "trainingplanrepository_trainingplanrepository_updateplan",
-      "community": 1,
+      "community": 3,
       "norm_label": ".updateplan()"
     },
     {
@@ -2134,7 +2179,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L16",
       "id": "trainingplanrepository_trainingplanrepository_saveworkoutlog",
-      "community": 1,
+      "community": 3,
       "norm_label": ".saveworkoutlog()"
     },
     {
@@ -2143,7 +2188,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L17",
       "id": "trainingplanrepository_trainingplanrepository_applypostworkoutcoaching",
-      "community": 1,
+      "community": 3,
       "norm_label": ".applypostworkoutcoaching()"
     },
     {
@@ -2152,7 +2197,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L18",
       "id": "trainingplanrepository_trainingplanrepository_clearworkoutlog",
-      "community": 1,
+      "community": 3,
       "norm_label": ".clearworkoutlog()"
     },
     {
@@ -2161,7 +2206,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L19",
       "id": "trainingplanrepository_trainingplanrepository_clearallplans",
-      "community": 1,
+      "community": 3,
       "norm_label": ".clearallplans()"
     },
     {
@@ -2170,7 +2215,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L22",
       "id": "trainingplanrepository_settingsrepository",
-      "community": 7,
+      "community": 8,
       "norm_label": "settingsrepository"
     },
     {
@@ -2179,7 +2224,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L23",
       "id": "trainingplanrepository_settingsrepository_observepreferences",
-      "community": 7,
+      "community": 8,
       "norm_label": ".observepreferences()"
     },
     {
@@ -2188,7 +2233,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L24",
       "id": "trainingplanrepository_settingsrepository_savepreferences",
-      "community": 7,
+      "community": 8,
       "norm_label": ".savepreferences()"
     },
     {
@@ -2197,7 +2242,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/repository/TrainingPlanRepository.kt",
       "source_location": "L25",
       "id": "trainingplanrepository_settingsrepository_clear",
-      "community": 7,
+      "community": 8,
       "norm_label": ".clear()"
     },
     {
@@ -2206,7 +2251,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/serialization/SerializableModels.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_data_serialization_serializablemodels_kt",
-      "community": 1,
+      "community": 3,
       "norm_label": "serializablemodels.kt"
     },
     {
@@ -2215,7 +2260,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/serialization/SerializableModels.kt",
       "source_location": "L15",
       "id": "serializablemodels_serializabletrainingplan",
-      "community": 1,
+      "community": 3,
       "norm_label": "serializabletrainingplan"
     },
     {
@@ -2224,7 +2269,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/serialization/SerializableModels.kt",
       "source_location": "L29",
       "id": "serializablemodels_serializabletrainingweek",
-      "community": 1,
+      "community": 3,
       "norm_label": "serializabletrainingweek"
     },
     {
@@ -2233,7 +2278,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/serialization/SerializableModels.kt",
       "source_location": "L38",
       "id": "serializablemodels_serializableworkout",
-      "community": 1,
+      "community": 3,
       "norm_label": "serializableworkout"
     },
     {
@@ -2242,7 +2287,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/serialization/SerializableModels.kt",
       "source_location": "L59",
       "id": "serializablemodels_toserializable",
-      "community": 1,
+      "community": 3,
       "norm_label": "toserializable()"
     },
     {
@@ -2251,7 +2296,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/serialization/SerializableModels.kt",
       "source_location": "L72",
       "id": "serializablemodels_todomain",
-      "community": 1,
+      "community": 3,
       "norm_label": "todomain()"
     },
     {
@@ -2260,7 +2305,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/local/LocalSettingsStore.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_data_local_localsettingsstore_kt",
-      "community": 7,
+      "community": 8,
       "norm_label": "localsettingsstore.kt"
     },
     {
@@ -2269,7 +2314,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/local/LocalSettingsStore.kt",
       "source_location": "L16",
       "id": "localsettingsstore_localsettingsstore",
-      "community": 7,
+      "community": 8,
       "norm_label": "localsettingsstore"
     },
     {
@@ -2278,7 +2323,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/local/LocalSettingsStore.kt",
       "source_location": "L47",
       "id": "localsettingsstore_localsettingsstore_savepreferences",
-      "community": 7,
+      "community": 8,
       "norm_label": ".savepreferences()"
     },
     {
@@ -2287,7 +2332,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/local/LocalSettingsStore.kt",
       "source_location": "L66",
       "id": "localsettingsstore_localsettingsstore_clearall",
-      "community": 7,
+      "community": 8,
       "norm_label": ".clearall()"
     },
     {
@@ -2296,7 +2341,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/local/LocalSettingsStore.kt",
       "source_location": "L70",
       "id": "localsettingsstore_localsettingsstore_writeoptional",
-      "community": 7,
+      "community": 8,
       "norm_label": ".writeoptional()"
     },
     {
@@ -2305,7 +2350,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/data/local/LocalSettingsStore.kt",
       "source_location": "L82",
       "id": "localsettingsstore_keys",
-      "community": 7,
+      "community": 8,
       "norm_label": "keys"
     },
     {
@@ -2467,7 +2512,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/contracts/PlanContracts.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_domain_contracts_plancontracts_kt",
-      "community": 34,
+      "community": 35,
       "norm_label": "plancontracts.kt"
     },
     {
@@ -2476,7 +2521,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/contracts/PlanContracts.kt",
       "source_location": "L8",
       "id": "plancontracts_plangenerationrequest",
-      "community": 34,
+      "community": 35,
       "norm_label": "plangenerationrequest"
     },
     {
@@ -2485,7 +2530,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/contracts/PlanContracts.kt",
       "source_location": "L18",
       "id": "plancontracts_plangenerationmetadata",
-      "community": 34,
+      "community": 35,
       "norm_label": "plangenerationmetadata"
     },
     {
@@ -2494,7 +2539,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/contracts/PlanContracts.kt",
       "source_location": "L24",
       "id": "plancontracts_plangenerationresult",
-      "community": 34,
+      "community": 35,
       "norm_label": "plangenerationresult"
     },
     {
@@ -2660,10 +2705,19 @@
       "norm_label": "insighttype"
     },
     {
-      "label": "CoachingInsight",
+      "label": "InsightKind",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/model/TrainingModels.kt",
       "source_location": "L105",
+      "id": "trainingmodels_insightkind",
+      "community": 2,
+      "norm_label": "insightkind"
+    },
+    {
+      "label": "CoachingInsight",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/model/TrainingModels.kt",
+      "source_location": "L114",
       "id": "trainingmodels_coachinginsight",
       "community": 2,
       "norm_label": "coachinginsight"
@@ -2672,7 +2726,7 @@
       "label": "PaceDataPoint",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/model/TrainingModels.kt",
-      "source_location": "L113",
+      "source_location": "L125",
       "id": "trainingmodels_pacedatapoint",
       "community": 2,
       "norm_label": "pacedatapoint"
@@ -2681,7 +2735,7 @@
       "label": "RpeDataPoint",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/model/TrainingModels.kt",
-      "source_location": "L119",
+      "source_location": "L131",
       "id": "trainingmodels_rpedatapoint",
       "community": 2,
       "norm_label": "rpedatapoint"
@@ -2690,7 +2744,7 @@
       "label": "WeekProgress",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/model/TrainingModels.kt",
-      "source_location": "L125",
+      "source_location": "L137",
       "id": "trainingmodels_weekprogress",
       "community": 2,
       "norm_label": "weekprogress"
@@ -2699,7 +2753,7 @@
       "label": "ProgressStats",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/model/TrainingModels.kt",
-      "source_location": "L137",
+      "source_location": "L149",
       "id": "trainingmodels_progressstats",
       "community": 2,
       "norm_label": "progressstats"
@@ -2719,7 +2773,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_domain_service_plangenerator_kt",
-      "community": 3,
+      "community": 4,
       "norm_label": "plangenerator.kt"
     },
     {
@@ -2728,7 +2782,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L20",
       "id": "plangenerator_plangenerator",
-      "community": 3,
+      "community": 4,
       "norm_label": "plangenerator"
     },
     {
@@ -2737,7 +2791,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L39",
       "id": "plangenerator_plangenerator_generateplan",
-      "community": 3,
+      "community": 4,
       "norm_label": ".generateplan()"
     },
     {
@@ -2746,7 +2800,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L80",
       "id": "plangenerator_plangenerator_calculatetotalweeks",
-      "community": 3,
+      "community": 4,
       "norm_label": ".calculatetotalweeks()"
     },
     {
@@ -2755,7 +2809,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L96",
       "id": "plangenerator_plangenerator_generateweeks",
-      "community": 3,
+      "community": 4,
       "norm_label": ".generateweeks()"
     },
     {
@@ -2764,7 +2818,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L136",
       "id": "plangenerator_plangenerator_calculatemileageprogression",
-      "community": 3,
+      "community": 4,
       "norm_label": ".calculatemileageprogression()"
     },
     {
@@ -2773,7 +2827,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L176",
       "id": "plangenerator_plangenerator_weektheme",
-      "community": 3,
+      "community": 4,
       "norm_label": ".weektheme()"
     },
     {
@@ -2782,7 +2836,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L200",
       "id": "plangenerator_plangenerator_generateworkoutsforweek",
-      "community": 3,
+      "community": 4,
       "norm_label": ".generateworkoutsforweek()"
     },
     {
@@ -2791,7 +2845,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L209",
       "id": "plangenerator_plangenerator_workoutdistribution",
-      "community": 3,
+      "community": 4,
       "norm_label": ".workoutdistribution()"
     },
     {
@@ -2800,7 +2854,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L232",
       "id": "plangenerator_plangenerator_scaleworkoutdistances",
-      "community": 3,
+      "community": 4,
       "norm_label": ".scaleworkoutdistances()"
     },
     {
@@ -2809,7 +2863,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L246",
       "id": "plangenerator_plangenerator_assigndaysofweek",
-      "community": 3,
+      "community": 4,
       "norm_label": ".assigndaysofweek()"
     },
     {
@@ -2818,7 +2872,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L281",
       "id": "plangenerator_plangenerator_effortlevel",
-      "community": 3,
+      "community": 4,
       "norm_label": ".effortlevel()"
     },
     {
@@ -2827,7 +2881,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L290",
       "id": "plangenerator_plangenerator_workouttitle",
-      "community": 3,
+      "community": 4,
       "norm_label": ".workouttitle()"
     },
     {
@@ -2836,7 +2890,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L299",
       "id": "plangenerator_plangenerator_roundtosingledecimal",
-      "community": 3,
+      "community": 4,
       "norm_label": ".roundtosingledecimal()"
     },
     {
@@ -2845,7 +2899,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/PlanGenerator.kt",
       "source_location": "L302",
       "id": "plangenerator_plangenerator_formatkm",
-      "community": 3,
+      "community": 4,
       "norm_label": ".formatkm()"
     },
     {
@@ -2861,7 +2915,7 @@
       "label": "InsightsService",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/InsightsService.kt",
-      "source_location": "L15",
+      "source_location": "L16",
       "id": "insightsservice_insightsservice",
       "community": 14,
       "norm_label": "insightsservice"
@@ -2870,7 +2924,7 @@
       "label": ".generate()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/InsightsService.kt",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "insightsservice_insightsservice_generate",
       "community": 14,
       "norm_label": ".generate()"
@@ -2879,7 +2933,7 @@
       "label": ".instantToLocalDate()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/InsightsService.kt",
-      "source_location": "L290",
+      "source_location": "L279",
       "id": "insightsservice_insightsservice_instanttolocaldate",
       "community": 14,
       "norm_label": ".instanttolocaldate()"
@@ -2888,7 +2942,7 @@
       "label": ".raceCountdown()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/InsightsService.kt",
-      "source_location": "L295",
+      "source_location": "L284",
       "id": "insightsservice_insightsservice_racecountdown",
       "community": 14,
       "norm_label": ".racecountdown()"
@@ -3016,7 +3070,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudeResponseParser.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_domain_service_clauderesponseparser_kt",
-      "community": 35,
+      "community": 36,
       "norm_label": "clauderesponseparser.kt"
     },
     {
@@ -3025,7 +3079,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudeResponseParser.kt",
       "source_location": "L9",
       "id": "clauderesponseparser_clauderesponseparser",
-      "community": 35,
+      "community": 36,
       "norm_label": "clauderesponseparser"
     },
     {
@@ -3034,7 +3088,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudeResponseParser.kt",
       "source_location": "L13",
       "id": "clauderesponseparser_clauderesponseparser_parseenrichments",
-      "community": 35,
+      "community": 36,
       "norm_label": ".parseenrichments()"
     },
     {
@@ -3043,7 +3097,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudeResponseParser.kt",
       "source_location": "L26",
       "id": "clauderesponseparser_clauderesponseparser_applyenrichments",
-      "community": 35,
+      "community": 36,
       "norm_label": ".applyenrichments()"
     },
     {
@@ -3088,7 +3142,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilder.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_domain_service_claudepromptbuilder_kt",
-      "community": 36,
+      "community": 30,
       "norm_label": "claudepromptbuilder.kt"
     },
     {
@@ -3097,7 +3151,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilder.kt",
       "source_location": "L13",
       "id": "claudepromptbuilder_claudepromptbuilder",
-      "community": 36,
+      "community": 30,
       "norm_label": "claudepromptbuilder"
     },
     {
@@ -3106,17 +3160,26 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilder.kt",
       "source_location": "L15",
       "id": "claudepromptbuilder_claudepromptbuilder_buildenrichmentprompt",
-      "community": 36,
+      "community": 30,
       "norm_label": ".buildenrichmentprompt()"
     },
     {
       "label": ".buildPostWorkoutPrompt()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilder.kt",
-      "source_location": "L54",
+      "source_location": "L55",
       "id": "claudepromptbuilder_claudepromptbuilder_buildpostworkoutprompt",
-      "community": 36,
+      "community": 30,
       "norm_label": ".buildpostworkoutprompt()"
+    },
+    {
+      "label": ".languageName()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilder.kt",
+      "source_location": "L81",
+      "id": "claudepromptbuilder_claudepromptbuilder_languagename",
+      "community": 30,
+      "norm_label": ".languagename()"
     },
     {
       "label": "ClaudeService.kt",
@@ -3124,7 +3187,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudeService.kt",
       "source_location": "L1",
       "id": "app_src_main_java_com_leopra_runningtrainer_domain_service_claudeservice_kt",
-      "community": 30,
+      "community": 31,
       "norm_label": "claudeservice.kt"
     },
     {
@@ -3133,7 +3196,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudeService.kt",
       "source_location": "L18",
       "id": "claudeservice_enrichmentresult",
-      "community": 30,
+      "community": 31,
       "norm_label": "enrichmentresult"
     },
     {
@@ -3142,7 +3205,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudeService.kt",
       "source_location": "L23",
       "id": "claudeservice_enrichplan",
-      "community": 30,
+      "community": 31,
       "norm_label": "enrichplan()"
     },
     {
@@ -3151,7 +3214,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudeService.kt",
       "source_location": "L48",
       "id": "claudeservice_enrichweek",
-      "community": 30,
+      "community": 31,
       "norm_label": "enrichweek()"
     },
     {
@@ -3160,7 +3223,7 @@
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudeService.kt",
       "source_location": "L61",
       "id": "claudeservice_generatepostworkoutcoaching",
-      "community": 30,
+      "community": 31,
       "norm_label": "generatepostworkoutcoaching()"
     },
     {
@@ -3354,7 +3417,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "rationale: room stores plan as json blob (not normalized rows)",
       "id": "rationale_roomjsonblob"
     },
@@ -3940,6 +4003,30 @@
       "_tgt": "claudepromptbuildertest_claudepromptbuildertest_buildpostworkoutprompt_returns_clauderequest_with_maxtokens_256",
       "source": "claudepromptbuildertest_claudepromptbuildertest",
       "target": "claudepromptbuildertest_claudepromptbuildertest_buildpostworkoutprompt_returns_clauderequest_with_maxtokens_256",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_src": "claudepromptbuildertest_claudepromptbuildertest",
+      "_tgt": "claudepromptbuildertest_claudepromptbuildertest_buildenrichmentprompt_asks_for_the_preferences_locale_language",
+      "source": "claudepromptbuildertest_claudepromptbuildertest",
+      "target": "claudepromptbuildertest_claudepromptbuildertest_buildenrichmentprompt_asks_for_the_preferences_locale_language",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilderTest.kt",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_src": "claudepromptbuildertest_claudepromptbuildertest",
+      "_tgt": "claudepromptbuildertest_claudepromptbuildertest_buildpostworkoutprompt_defaults_to_english_and_honors_localecode",
+      "source": "claudepromptbuildertest_claudepromptbuildertest",
+      "target": "claudepromptbuildertest_claudepromptbuildertest_buildpostworkoutprompt_defaults_to_english_and_honors_localecode",
       "confidence_score": 1.0
     },
     {
@@ -5002,7 +5089,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L61",
+      "source_location": "L64",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
       "_tgt": "homescreen_homescreen",
@@ -5014,7 +5101,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L180",
+      "source_location": "L183",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
       "_tgt": "homescreen_noplanemptystate",
@@ -5026,7 +5113,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L221",
+      "source_location": "L224",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
       "_tgt": "homescreen_homescreenskeleton",
@@ -5038,7 +5125,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L301",
+      "source_location": "L304",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
       "_tgt": "homescreen_surfacecard",
@@ -5050,7 +5137,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L320",
+      "source_location": "L323",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
       "_tgt": "homescreen_typelabel",
@@ -5062,7 +5149,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L330",
+      "source_location": "L333",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
       "_tgt": "homescreen_zonedescription",
@@ -5074,7 +5161,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L339",
+      "source_location": "L342",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
       "_tgt": "homescreen_label",
@@ -5086,7 +5173,43 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L349",
+      "source_location": "L353",
+      "weight": 1.0,
+      "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
+      "_tgt": "homescreen_displaytitle",
+      "source": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
+      "target": "homescreen_displaytitle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
+      "source_location": "L368",
+      "weight": 1.0,
+      "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
+      "_tgt": "homescreen_weekthemelabel",
+      "source": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
+      "target": "homescreen_weekthemelabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
+      "source_location": "L382",
+      "weight": 1.0,
+      "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
+      "_tgt": "homescreen_titletext",
+      "source": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
+      "target": "homescreen_titletext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
+      "source_location": "L406",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
       "_tgt": "homescreen_workouttypecolor",
@@ -5098,7 +5221,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L359",
+      "source_location": "L416",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
       "_tgt": "homescreen_workouttile",
@@ -5110,7 +5233,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L410",
+      "source_location": "L467",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
       "_tgt": "homescreen_planchip",
@@ -5122,7 +5245,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L428",
+      "source_location": "L485",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
       "_tgt": "homescreen_insightchip",
@@ -5134,7 +5257,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/ui/screens/HomeScreen.kt",
-      "source_location": "L446",
+      "source_location": "L503",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_ui_screens_homescreen_kt",
       "_tgt": "homescreen_insightcolors",
@@ -6349,6 +6472,18 @@
       "source_location": "L105",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_domain_model_trainingmodels_kt",
+      "_tgt": "trainingmodels_insightkind",
+      "source": "app_src_main_java_com_leopra_runningtrainer_domain_model_trainingmodels_kt",
+      "target": "trainingmodels_insightkind",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/model/TrainingModels.kt",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_src": "app_src_main_java_com_leopra_runningtrainer_domain_model_trainingmodels_kt",
       "_tgt": "trainingmodels_coachinginsight",
       "source": "app_src_main_java_com_leopra_runningtrainer_domain_model_trainingmodels_kt",
       "target": "trainingmodels_coachinginsight",
@@ -6358,7 +6493,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/model/TrainingModels.kt",
-      "source_location": "L113",
+      "source_location": "L125",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_domain_model_trainingmodels_kt",
       "_tgt": "trainingmodels_pacedatapoint",
@@ -6370,7 +6505,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/model/TrainingModels.kt",
-      "source_location": "L119",
+      "source_location": "L131",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_domain_model_trainingmodels_kt",
       "_tgt": "trainingmodels_rpedatapoint",
@@ -6382,7 +6517,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/model/TrainingModels.kt",
-      "source_location": "L125",
+      "source_location": "L137",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_domain_model_trainingmodels_kt",
       "_tgt": "trainingmodels_weekprogress",
@@ -6394,7 +6529,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/model/TrainingModels.kt",
-      "source_location": "L137",
+      "source_location": "L149",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_domain_model_trainingmodels_kt",
       "_tgt": "trainingmodels_progressstats",
@@ -6598,7 +6733,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/InsightsService.kt",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_src": "app_src_main_java_com_leopra_runningtrainer_domain_service_insightsservice_kt",
       "_tgt": "insightsservice_insightsservice",
@@ -6610,7 +6745,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/InsightsService.kt",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_src": "insightsservice_insightsservice",
       "_tgt": "insightsservice_insightsservice_generate",
@@ -6622,7 +6757,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/InsightsService.kt",
-      "source_location": "L290",
+      "source_location": "L279",
       "weight": 1.0,
       "_src": "insightsservice_insightsservice",
       "_tgt": "insightsservice_insightsservice_instanttolocaldate",
@@ -6634,7 +6769,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/InsightsService.kt",
-      "source_location": "L295",
+      "source_location": "L284",
       "weight": 1.0,
       "_src": "insightsservice_insightsservice",
       "_tgt": "insightsservice_insightsservice_racecountdown",
@@ -6886,12 +7021,24 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilder.kt",
-      "source_location": "L54",
+      "source_location": "L55",
       "weight": 1.0,
       "_src": "claudepromptbuilder_claudepromptbuilder",
       "_tgt": "claudepromptbuilder_claudepromptbuilder_buildpostworkoutprompt",
       "source": "claudepromptbuilder_claudepromptbuilder",
       "target": "claudepromptbuilder_claudepromptbuilder_buildpostworkoutprompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/leopra/runningtrainer/domain/service/ClaudePromptBuilder.kt",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_src": "claudepromptbuilder_claudepromptbuilder",
+      "_tgt": "claudepromptbuilder_claudepromptbuilder_languagename",
+      "source": "claudepromptbuilder_claudepromptbuilder",
+      "target": "claudepromptbuilder_claudepromptbuilder_languagename",
       "confidence_score": 1.0
     },
     {

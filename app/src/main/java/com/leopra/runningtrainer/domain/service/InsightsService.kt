@@ -2,6 +2,7 @@ package com.leopra.runningtrainer.domain.service
 
 import com.leopra.runningtrainer.domain.model.CoachingInsight
 import com.leopra.runningtrainer.domain.model.GoalType
+import com.leopra.runningtrainer.domain.model.InsightKind
 import com.leopra.runningtrainer.domain.model.InsightType
 import com.leopra.runningtrainer.domain.model.TrainingPlan
 import com.leopra.runningtrainer.domain.model.WorkoutFeeling
@@ -31,8 +32,7 @@ class InsightsService {
         if (currentWeek.isTaperWeek) {
             insights.add(CoachingInsight(
                 id = "taper_week",
-                title = "Taper Week",
-                body = "Reduce your volume this week and trust your training. Your body is preparing for race day.",
+                kind = InsightKind.TAPER_WEEK,
                 type = InsightType.INFO,
                 priority = 5
             ))
@@ -45,8 +45,7 @@ class InsightsService {
             if (prevKm > 0 && thisKm / prevKm < 0.88) {
                 insights.add(CoachingInsight(
                     id = "recovery_week",
-                    title = "Recovery Week",
-                    body = "Lower mileage this week is intentional. Embrace the recovery — it's where you get stronger.",
+                    kind = InsightKind.RECOVERY_WEEK,
                     type = InsightType.INFO,
                     priority = 6
                 ))
@@ -57,8 +56,7 @@ class InsightsService {
         if (currentWeekIndex == 0 && daysSinceStart < 7) {
             insights.add(CoachingInsight(
                 id = "week_1_welcome",
-                title = "Welcome to Week 1!",
-                body = "Your training journey starts now. Focus on consistency over intensity this first week.",
+                kind = InsightKind.WEEK_1_WELCOME,
                 type = InsightType.MOTIVATION,
                 priority = 4
             ))
@@ -74,17 +72,17 @@ class InsightsService {
             when {
                 rate >= 0.85 -> insights.add(CoachingInsight(
                     id = "high_consistency",
-                    title = "Outstanding Consistency!",
-                    body = "You've completed ${(rate * 100).toInt()}% of your workouts. Keep that momentum going!",
+                    kind = InsightKind.HIGH_CONSISTENCY,
                     type = InsightType.POSITIVE,
-                    priority = 10
+                    priority = 10,
+                    count = (rate * 100).toInt()
                 ))
                 rate < 0.55 && currentWeekIndex >= 2 -> insights.add(CoachingInsight(
                     id = "low_consistency",
-                    title = "Consistency Needs Work",
-                    body = "You've completed ${(rate * 100).toInt()}% of workouts. Try to hit at least 3 sessions this week.",
+                    kind = InsightKind.LOW_CONSISTENCY,
                     type = InsightType.WARNING,
-                    priority = 8
+                    priority = 8,
+                    count = (rate * 100).toInt()
                 ))
             }
         }
@@ -104,10 +102,10 @@ class InsightsService {
         if (recentMissed >= 3) {
             insights.add(CoachingInsight(
                 id = "back_on_track",
-                title = "Get Back on Track",
-                body = "You've missed $recentMissed workouts in the last 7 days. Even a short easy run helps.",
+                kind = InsightKind.BACK_ON_TRACK,
                 type = InsightType.WARNING,
-                priority = 7
+                priority = 7,
+                count = recentMissed
             ))
         }
 
@@ -126,19 +124,19 @@ class InsightsService {
             when {
                 weekRate >= 1.0 && todayDow >= 3 -> insights.add(CoachingInsight(
                     id = "on_track",
-                    title = "On Track This Week",
-                    body = "You've logged ${"%.1f".format(weekLoggedKm)} km of your ${"%.0f".format(weekTargetKm)} km target. Keep going!",
+                    kind = InsightKind.ON_TRACK_WEEK,
                     type = InsightType.POSITIVE,
-                    priority = 12
+                    priority = 12,
+                    km = weekLoggedKm
                 ))
                 weekRate < 0.4 && todayDow >= 4 -> {
                     val remaining = (weekTargetKm - weekLoggedKm).coerceAtLeast(0.0)
                     insights.add(CoachingInsight(
                         id = "behind_this_week",
-                        title = "Behind This Week",
-                        body = "You still have ${"%.1f".format(remaining)} km to log before the week ends.",
+                        kind = InsightKind.BEHIND_WEEK,
                         type = InsightType.WARNING,
-                        priority = 9
+                        priority = 9,
+                        km = remaining
                     ))
                 }
             }
@@ -164,8 +162,7 @@ class InsightsService {
             if (tooFast.toDouble() / loggedEasyRuns.size >= 0.6) {
                 insights.add(CoachingInsight(
                     id = "easy_runs_too_fast",
-                    title = "Easy Runs Too Fast",
-                    body = "Many easy runs are above target pace. Slow down — easy runs should feel conversational.",
+                    kind = InsightKind.EASY_RUNS_TOO_FAST,
                     type = InsightType.WARNING,
                     priority = 11
                 ))
@@ -185,8 +182,7 @@ class InsightsService {
         if (recentEasyWithRpe.size >= 3 && recentEasyWithRpe.count { it.rpe!! >= 7 } >= 3) {
             insights.add(CoachingInsight(
                 id = "high_rpe_easy",
-                title = "Easy Runs Feeling Hard",
-                body = "Recent easy runs have high RPE. Consider reducing pace or checking recovery between sessions.",
+                kind = InsightKind.HIGH_RPE_EASY,
                 type = InsightType.WARNING,
                 priority = 11
             ))
@@ -207,10 +203,10 @@ class InsightsService {
             if (consecutiveNeg >= 2) {
                 insights.add(CoachingInsight(
                     id = "negative_feeling",
-                    title = "Signs of Fatigue",
-                    body = "Your last $consecutiveNeg workouts felt tired or rough. Consider an extra rest day or easy walk.",
+                    kind = InsightKind.FATIGUE_SIGNS,
                     type = InsightType.WARNING,
-                    priority = 9
+                    priority = 9,
+                    count = consecutiveNeg
                 ))
             }
         }
@@ -222,8 +218,7 @@ class InsightsService {
             if (longRun != null && !longRun.isCompleted) {
                 insights.add(CoachingInsight(
                     id = "missed_long_run",
-                    title = "Long Run Missed",
-                    body = "Last week's long run was skipped. Try to prioritize it this week — it's the foundation of your plan.",
+                    kind = InsightKind.MISSED_LONG_RUN,
                     type = InsightType.WARNING,
                     priority = 8
                 ))
@@ -247,10 +242,10 @@ class InsightsService {
         if (streak >= 5) {
             insights.add(CoachingInsight(
                 id = "streak_$streak",
-                title = "$streak-Day Streak!",
-                body = "You've completed $streak workouts in a row. That kind of consistency builds champions.",
+                kind = InsightKind.STREAK,
                 type = InsightType.POSITIVE,
-                priority = 13
+                priority = 13,
+                count = streak
             ))
         }
 
@@ -266,19 +261,13 @@ class InsightsService {
                         WorkoutType.longRun, WorkoutType.intervalRun, WorkoutType.tempoRun
                     )
                 ) {
-                    val typeLabel = when (tomorrowWorkout.type) {
-                        WorkoutType.longRun -> "Long Run"
-                        WorkoutType.intervalRun -> "Interval Run"
-                        WorkoutType.tempoRun -> "Tempo Run"
-                        else -> tomorrowWorkout.type.name
-                    }
-                    val km = tomorrowWorkout.distanceKm?.let { "${"%.1f".format(it)} km" } ?: "—"
                     insights.add(CoachingInsight(
                         id = "key_tomorrow",
-                        title = "Key Session Tomorrow",
-                        body = "$typeLabel ($km) tomorrow. Rest up and fuel well tonight.",
+                        kind = InsightKind.KEY_SESSION_TOMORROW,
                         type = InsightType.MOTIVATION,
-                        priority = 14
+                        priority = 14,
+                        km = tomorrowWorkout.distanceKm,
+                        workoutType = tomorrowWorkout.type
                     ))
                 }
             }
@@ -292,50 +281,37 @@ class InsightsService {
         return LocalDate.of(kd.year, kd.monthNumber, kd.dayOfMonth)
     }
 
-    private fun raceCountdown(daysToRace: Int, goal: GoalType): CoachingInsight {
-        val race = when (goal) {
-            GoalType.fiveK -> "5K"
-            GoalType.tenK -> "10K"
-            GoalType.halfMarathon -> "Half Marathon"
-            GoalType.marathon -> "Marathon"
-            GoalType.trailRun -> "Trail Race"
-            GoalType.generalFitness -> "race"
-        }
-        return when {
-            daysToRace == 0 -> CoachingInsight(
-                id = "race_day",
-                title = "Race Day!",
-                body = "Today is your $race! Trust your training, stay relaxed, and enjoy every step.",
-                type = InsightType.MOTIVATION,
-                priority = 1
-            )
-            daysToRace <= 7 -> CoachingInsight(
-                id = "race_week",
-                title = "$daysToRace Day${if (daysToRace == 1) "" else "s"} to Race",
-                body = "Your $race is almost here. Stay light, stay sharp.",
-                type = InsightType.MOTIVATION,
-                priority = 2
-            )
-            daysToRace <= 21 -> {
-                val weeks = (daysToRace + 6) / 7
-                CoachingInsight(
-                    id = "almost_there",
-                    title = "Almost There — $weeks Week${if (weeks == 1) "" else "s"} Left",
-                    body = "Your $race is coming up fast. Stay focused and trust the process.",
-                    type = InsightType.INFO,
-                    priority = 3
-                )
-            }
-            else -> {
-                val weeks = (daysToRace + 6) / 7
-                CoachingInsight(
-                    id = "weeks_to_go",
-                    title = "$weeks Weeks to $race",
-                    body = "You have $weeks weeks of training ahead. Build the habit now.",
-                    type = InsightType.INFO,
-                    priority = 15
-                )
-            }
-        }
+    private fun raceCountdown(daysToRace: Int, goal: GoalType): CoachingInsight = when {
+        daysToRace == 0 -> CoachingInsight(
+            id = "race_day",
+            kind = InsightKind.RACE_DAY,
+            type = InsightType.MOTIVATION,
+            priority = 1,
+            goalType = goal
+        )
+        daysToRace <= 7 -> CoachingInsight(
+            id = "race_week",
+            kind = InsightKind.DAYS_TO_RACE,
+            type = InsightType.MOTIVATION,
+            priority = 2,
+            count = daysToRace,
+            goalType = goal
+        )
+        daysToRace <= 21 -> CoachingInsight(
+            id = "almost_there",
+            kind = InsightKind.WEEKS_LEFT_SOON,
+            type = InsightType.INFO,
+            priority = 3,
+            count = (daysToRace + 6) / 7,
+            goalType = goal
+        )
+        else -> CoachingInsight(
+            id = "weeks_to_go",
+            kind = InsightKind.WEEKS_TO_RACE,
+            type = InsightType.INFO,
+            priority = 15,
+            count = (daysToRace + 6) / 7,
+            goalType = goal
+        )
     }
 }

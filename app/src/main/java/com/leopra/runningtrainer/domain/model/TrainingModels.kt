@@ -102,12 +102,24 @@ data class PaceZone(
 
 enum class InsightType { INFO, POSITIVE, WARNING, MOTIVATION }
 
+enum class InsightKind {
+    TAPER_WEEK, RECOVERY_WEEK, WEEK_1_WELCOME, HIGH_CONSISTENCY, LOW_CONSISTENCY,
+    BACK_ON_TRACK, ON_TRACK_WEEK, BEHIND_WEEK, EASY_RUNS_TOO_FAST, HIGH_RPE_EASY,
+    FATIGUE_SIGNS, MISSED_LONG_RUN, STREAK, KEY_SESSION_TOMORROW,
+    RACE_DAY, DAYS_TO_RACE, WEEKS_LEFT_SOON, WEEKS_TO_RACE
+}
+
+// Display text is resolved from string resources in the UI layer (see titleText() in HomeScreen.kt);
+// the domain only carries the kind plus the values needed to format it.
 data class CoachingInsight(
     val id: String,
-    val title: String,
-    val body: String,
+    val kind: InsightKind,
     val type: InsightType,
-    val priority: Int
+    val priority: Int,
+    val count: Int? = null,
+    val km: Double? = null,
+    val goalType: GoalType? = null,
+    val workoutType: WorkoutType? = null
 )
 
 data class PaceDataPoint(
