@@ -1,7 +1,7 @@
-# Graph Report - .  (2026-06-10)
+# Graph Report - .  (2026-06-11)
 
 ## Corpus Check
-- 58 files · ~30,600 words
+- 58 files · ~31,751 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -309,7 +309,7 @@ Nodes (1): StretchExercise
 
 ### Community 50 - "Community 50"
 Cohesion: 1.0
-Nodes (1): build.gradle.kts (root)
+Nodes (0): 
 
 ### Community 51 - "Community 51"
 Cohesion: 1.0
@@ -356,7 +356,7 @@ Cohesion: 1.0
 Nodes (1): Rationale: PaceZone.label kept as domain English strings for serialization/testing only
 
 ## Knowledge Gaps
-- **46 isolated node(s):** `build.gradle.kts (root)`, `PlanFixture`, `FixtureExpected`, `MainUiState`, `PlanUiState` (+41 more)
+- **45 isolated node(s):** `PlanFixture`, `FixtureExpected`, `MainUiState`, `PlanUiState`, `OnboardingFormState` (+40 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **Thin community `Community 43`** (2 nodes): `RunningTrainerApp.kt`, `RunningTrainerApp()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -372,7 +372,7 @@ Nodes (1): Rationale: PaceZone.label kept as domain English strings for serializ
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 49`** (2 nodes): `StretchExercise.kt`, `StretchExercise`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 50`** (1 nodes): `build.gradle.kts (root)`
+- **Thin community `Community 50`** (1 nodes): `build.gradle.kts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 51`** (1 nodes): `settings.gradle.kts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -404,8 +404,8 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **Why does `PlanGenerator` connect `Community 3` to `Community 14`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **What connects `build.gradle.kts (root)`, `PlanFixture`, `FixtureExpected` to the rest of the system?**
-  _46 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `PlanFixture`, `FixtureExpected`, `MainUiState` to the rest of the system?**
+  _45 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.12 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

@@ -100,17 +100,13 @@
   },
   "nodes": [
     {
-      "label": "build.gradle.kts (root)",
+      "label": "build.gradle.kts",
       "file_type": "code",
       "source_file": "build.gradle.kts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "build_gradle_root",
+      "source_location": "L1",
+      "id": "build_gradle_kts",
       "community": 50,
-      "norm_label": "build.gradle.kts (root)"
+      "norm_label": "build.gradle.kts"
     },
     {
       "label": "settings.gradle.kts",
