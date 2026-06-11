@@ -26,6 +26,16 @@ Grab the APK from the [latest release](https://github.com/leonardopra/running-tr
 - **3 languages** — English, Italiano, Deutsch, switchable in-app
 - **Private by design** — everything in local storage ([privacy policy](https://leonardopra.github.io/running-trainer-privacy/))
 
+## Screenshots
+
+| Home | Workout detail | Pace zones |
+|---|---|---|
+| ![Home](docs/screenshots/home.png) | ![Workout detail](docs/screenshots/workout-detail.png) | ![Pace zones](docs/screenshots/pace-zones.png) |
+
+| Progress | Stretching | Onboarding |
+|---|---|---|
+| ![Progress](docs/screenshots/progress.png) | ![Stretching](docs/screenshots/stretching.png) | ![Onboarding](docs/screenshots/onboarding.png) |
+
 ## Screens
 
 | Screen | Notes |
