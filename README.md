@@ -1,58 +1,65 @@
-# Android App
+# Running Trainer
 
-Native Android implementation of Running Trainer, built with Kotlin + Jetpack Compose. This is the product and the sole supported platform; the former Flutter multiplatform app (macOS/Android/Web) is frozen — see ADR 0001.
+[![CI](https://github.com/leonardopra/running-trainer-android/actions/workflows/ci.yml/badge.svg)](https://github.com/leonardopra/running-trainer-android/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/leonardopra/running-trainer-android)](https://github.com/leonardopra/running-trainer-android/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Android](https://img.shields.io/badge/Android-8.0%2B%20(API%2026)-3DDC84?logo=android&logoColor=white)
 
-## Stack
+A native Android running coach that generates personalised multi-week training plans with a rule-based engine, then enriches each workout with descriptions, tips, and post-run coaching from Claude AI.
 
-- Kotlin 2.0.21, Java 17, AGP 8.5.2
-- Jetpack Compose (BOM 2024.09.03) + Material3
-- Hilt 2.52 (DI) + KSP 2.0.21-1.0.27
-- Room 2.6.1 (plan storage as JSON blob) — Room compiler via KSP
-- DataStore Preferences (user settings)
-- kotlinx-serialization-json 1.7.3
-- kotlinx-datetime 0.6.1
-- AppCompat 1.7.0 (locale switching)
-- navigation-compose 2.8.0 (on the classpath; routing is ViewModel-driven, NavHost not used)
-- Tests: JUnit 4, MockK 1.13.10, kotlinx-coroutines-test, Compose UI test
-- Min SDK 26, target/compile SDK 35
-- App ID / namespace `com.leopra.runningtrainer`, version `0.1.0` (versionCode 1)
+**All data stays on-device** — no account, no backend, no subscription. The optional AI features use your own Anthropic API key, encrypted at rest via the Android Keystore.
 
-## Status
+## Download
 
-Core feature set implemented (rule-based plan generation, Claude enrichment + streaming
-post-workout coaching, insights engine, VDOT pace calculator, onboarding, scheduled
-notifications, EN/IT/DE localization, stretching, privacy). Android-only — Web/macOS/iOS
-are paused (see `docs/adr/0001-single-native-android-app.md`).
+Grab the APK from the [latest release](https://github.com/leonardopra/running-trainer-android/releases/latest).
 
-Not yet production-ready:
-- Rule-engine parity with `product-spec/fixtures` still being broadened (RUN-16).
-- ~~Claude API key is stored in plaintext in DataStore — no encryption (RUN-48)~~ Fixed: key is encrypted via Android Keystore (AES-256-GCM) and the DataStore dir is excluded from backups.
-- No R8/minification or signing config; current build is debug `0.1.0`.
+> Current releases ship a debug-signed APK: it installs normally, but you must uninstall the previous version before installing a new release.
+
+## Features
+
+- **Personalised plans** — rule-based generator tuned by goal (5K → marathon), race date, fitness level, training days, and age (50+ gets gentler progression and shorter recovery cycles)
+- **AI coaching (optional)** — Claude enriches each workout with descriptions and tips, and streams live post-workout feedback after you log a run
+- **VDOT pace calculator** — pace zones from your goal time, with expandable zone explanations
+- **Progress tracking** — weekly volume, feeling/type breakdowns, insights engine, full run history
+- **Workout reminders** — exact alarms that survive reboots and app updates
+- **Stretching guides** — pre/post-run routines with video links
+- **3 languages** — English, Italiano, Deutsch, switchable in-app
+- **Private by design** — everything in local storage ([privacy policy](https://leonardopra.github.io/running-trainer-privacy/))
 
 ## Screens
 
-| Screen | Route | Notes |
-|---|---|---|
-| Onboarding | Goal → RaceConfig → Fitness → Days → Profile → Generating | Race-date or duration input |
-| Home | `Home` | Greeting, insight strip, full multi-week plan with current week highlighted |
-| Workout Detail | `WorkoutDetail` | Pace zones, AI coach note, coaching tip, log form, post-workout coaching |
-| Progress | `Progress` | Stat grid, weekly bars, feeling/type breakdown, recent activity |
-| Run History | `RunHistory` | Full list of completed workouts |
-| Pace Calculator | `PaceCalc` | Goal distance selector, HH:MM:SS input, expandable pace zone cards, auto-saves goal time |
-| Settings | `Settings` | Profile, AI key, language (EN/IT/DE), units, notifications, new plan, reset |
-| Stretching | `Stretching` | Pre/post run, expandable exercise list, YouTube links |
-| Privacy | `Privacy` | Data storage, AI, notifications, deletion policy |
+| Screen | Notes |
+|---|---|
+| Onboarding | Goal → race config → fitness → days → profile → plan generation |
+| Home | Greeting, insight strip, full multi-week plan with current week highlighted |
+| Workout detail | Pace zones, AI coach note, log form, streaming post-workout coaching |
+| Progress / Run history | Stat grid, weekly bars, feeling/type breakdown, completed runs |
+| Pace calculator | Goal distance + HH:MM:SS input, expandable pace zone cards |
+| Settings | Profile, AI key, language, units, notifications, new plan, reset |
+| Stretching | Pre/post run, expandable exercise list, YouTube links |
+| Privacy | Data storage, AI, notifications, deletion policy |
 
-## Running
+## Tech stack
+
+Kotlin 2.0.21 · Jetpack Compose (Material 3) · Hilt · Room · DataStore · kotlinx-serialization · min SDK 26, target SDK 35.
+
+Architecture notes, key constraints, and gotchas live in [CLAUDE.md](CLAUDE.md); platform decisions in [docs/adr](docs/adr).
+
+## Build from source
 
 ```bash
-./gradlew assembleDebug                                          # Build debug APK
-./gradlew test                                                   # Run all JVM unit tests
-./gradlew :app:testDebugUnitTest --tests "*.PlanGeneratorFixtureTest"
-./gradlew connectedAndroidTest                                   # Instrumented tests (device/emulator required)
+./gradlew assembleDebug        # Build debug APK
+./gradlew test                 # JVM unit tests (incl. plan-generator fixture parity)
+./gradlew connectedAndroidTest # Instrumented tests (device/emulator required)
 ./gradlew lint
 ```
 
-## Architecture
+Requires JDK 17. For AI features, add your Anthropic API key in Settings inside the app.
 
-See `CLAUDE.md` for full architecture notes, key constraints, and gotchas.
+## Project history
+
+Extracted from the [Running-trainer monorepo](https://github.com/leonardopra/Running-trainer) (now archived) in June 2026; the former Flutter multiplatform app is frozen — see [ADR 0001](docs/adr/0001-single-native-android-app.md). The rule engine stays in behavioural parity with `product-spec/fixtures`, enforced by fixture tests.
+
+## License
+
+[MIT](LICENSE)
