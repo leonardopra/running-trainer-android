@@ -12,3 +12,7 @@ graphify-out/cache/
 graphify-out/cost.json
 
 /app/release/app-release.aab
+
+# Release signing (CI writes these from secrets)
+key.properties
+*.jks

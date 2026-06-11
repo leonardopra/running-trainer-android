@@ -14,6 +14,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 > Min SDK 26, target/compile SDK 35, Java 17, Kotlin 2.0.21, Compose BOM 2024.09.03. App ID / namespace `com.leopra.runningtrainer`.
 
+## CI & Release
+
+- `.github/workflows/ci.yml` runs `./gradlew test` and `./gradlew lint` on every push to `main` and on PRs; test/lint reports are uploaded as artifacts on failure.
+- `.github/workflows/release.yml` (on `v*` tags or manual dispatch) builds a signed release APK and attaches it to a GitHub Release. Signing reads the `KEYSTORE_BASE64`/`KEY_ALIAS`/`KEY_PASSWORD`/`STORE_PASSWORD` secrets — the same keystore as the former monorepo releases, required so existing installs (same applicationId) can upgrade in place. Without secrets it falls back to a debug APK and skips the release.
+- `app/build.gradle.kts` reads root `key.properties` for the release signing config (see `key.properties.example`); absent → unsigned release build. Bump `versionCode`/`versionName` before tagging.
+
 ## Architecture
 
 **Single-activity, multiple ViewModels.** App state is split across five `@HiltViewModel` classes, all obtained in `MainActivity` via `by viewModels()`:
