@@ -80,7 +80,7 @@ Add fixture files alongside `PlanGeneratorFixtureTest` when adding new plan-gene
 
 ## Key constraints
 
-- This is the sole shipping product (Android-only); the former Flutter app is frozen (see docs/adr/0001-single-native-android-app.md). Rule-engine behavior must still remain in parity with product-spec/fixtures — the fixture tests remain the contract.
+- This repo is **public** on GitHub — never commit secrets, keystores, or API keys. It is the sole shipping product (Android-only); the former Flutter app is frozen and its monorepo (`leonardopra/Running-trainer`) archived (see docs/adr/0001-single-native-android-app.md). Rule-engine behavior must still remain in parity with product-spec/fixtures — the fixture tests remain the contract.
 - **Hilt is the composition root.** Add new dependencies through `app/di/AppModule.kt` (or appropriate Hilt modules); do not reintroduce a manual `AppContainer`.
 - Room stores the plan as a JSON blob (not normalized rows) — intentional to keep schema migrations simple during the pilot phase.
 - Do not re-add `hive_generator` or add Robolectric — see root-level memory for dependency constraints.
@@ -94,4 +94,4 @@ This project has a graphify knowledge graph at `graphify-out/`.
 Rules:
 - Before answering architecture or codebase questions, read `graphify-out/GRAPH_REPORT.md` for god nodes and community structure.
 - If `graphify-out/wiki/index.md` exists, navigate it instead of reading raw files.
-- After modifying code files in this session, run `graphify update .` to keep the graph current (AST-only, no API cost). The current graph predates the `com.leopra.runningtrainer` rename and is stale — regenerate it.
+- After modifying code files in this session, run `graphify update .` to keep the graph current (AST-only, no API cost).
