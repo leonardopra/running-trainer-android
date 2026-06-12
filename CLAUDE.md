@@ -17,7 +17,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## CI & Release
 
 - `.github/workflows/ci.yml` runs `./gradlew test` and `./gradlew lint` on every push to `main` and on PRs; test/lint reports are uploaded as artifacts on failure. `main` is protected: PRs need the `build` check green (admin direct pushes bypass; force-push/deletion blocked).
-- `.github/workflows/release.yml` (on `v*` tags or manual dispatch) builds an APK and attaches it to a GitHub Release. With the `KEYSTORE_BASE64`/`KEY_ALIAS`/`KEY_PASSWORD`/`STORE_PASSWORD` secrets set it builds a signed release APK (same keystore as the former monorepo releases, so existing installs upgrade in place); without them — the current, intentional setup — it ships the debug APK, which installs fine but requires uninstall between releases (CI regenerates the debug keystore each run).
+- `.github/workflows/release.yml` (on `v*` tags or manual dispatch) builds an APK and attaches it to a GitHub Release. The `KEYSTORE_BASE64`/`KEY_ALIAS`/`KEY_PASSWORD`/`STORE_PASSWORD` secrets are set (since June 2026), so it builds a **signed release APK** (same keystore as the former monorepo releases, so those installs upgrade in place). Without the secrets it falls back to the debug APK, which requires uninstall between releases — this was the case for v0.1.0 and v0.2.0, so upgrading from those to a signed release needs one last uninstall.
 - `app/build.gradle.kts` reads root `key.properties` for the release signing config (see `key.properties.example`); absent → unsigned release build. Bump `versionCode`/`versionName` before tagging.
 
 ## Architecture

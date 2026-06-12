@@ -13,7 +13,7 @@ A native Android running coach that generates personalised multi-week training p
 
 Grab the APK from the [latest release](https://github.com/leonardopra/running-trainer-android/releases/latest).
 
-> Current releases ship a debug-signed APK: it installs normally, but you must uninstall the previous version before installing a new release.
+> Releases after v0.2.0 ship a signed APK and upgrade in place. v0.1.0 and v0.2.0 were debug-signed: if you have one of those installed, uninstall it once before installing a newer release.
 
 ## Features
 
